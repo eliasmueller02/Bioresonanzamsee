@@ -67,6 +67,12 @@ export default function UeberMichPage() {
                   height={56}
                   className="rounded-full"
                 />
+                <Image
+                  src="/images/siegel-kt-austria.png"
+                  alt="KT Austria zertifiziert"
+                  width={56}
+                  height={56}
+                />
               </div>
             </div>
           </div>
