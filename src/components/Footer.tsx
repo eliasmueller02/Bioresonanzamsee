@@ -21,7 +21,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm leading-relaxed">
-              Ihre Praxis für ganzheitliches Wohlbefinden
+              Deine Praxis für ganzheitliches Wohlbefinden
               <br />
               in Jois am Neusiedler See.
             </p>

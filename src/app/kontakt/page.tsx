@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Kontakt",
-  description: "Kontaktieren Sie BIORESONANZ am See. Bahnstraße 22, 7093 Jois.",
+  description: "Kontaktiere BIORESONANZ am See. Bahnstraße 22, 7093 Jois.",
 };
 
 export default function KontaktPage() {
@@ -13,7 +13,7 @@ export default function KontaktPage() {
         <div className="container-max text-center">
           <h1 className="text-4xl font-heading font-bold mb-3">Kontakt</h1>
           <p className="text-dark/50 max-w-lg mx-auto">
-            Ich freue mich auf Ihre Nachricht.
+            Ich freue mich auf deine Nachricht.
           </p>
         </div>
       </section>

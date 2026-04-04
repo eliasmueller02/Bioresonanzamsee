@@ -56,15 +56,15 @@ export default function Home() {
                 HOLOSAN© Bioresonanzmethode
               </p>
               <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-bold text-dark leading-[1.15] mb-6">
-                Ihre Energie.
+                Deine Energie.
                 <br />
-                Ihre Balance.
+                Deine Balance.
                 <br />
-                <span className="text-sage-400">Ihr Wohlbefinden.</span>
+                <span className="text-sage-400">Dein Wohlbefinden.</span>
               </h1>
               <p className="text-dark/50 text-lg max-w-lg mb-10 leading-relaxed">
                 Sanfte, schmerzfreie Bioresonanzmethode bei energetischen
-                Blockaden und Dysbalancen. Ihre Praxis in Jois am Neusiedler See.
+                Blockaden und Dysbalancen. Deine Praxis in Jois am Neusiedler See.
               </p>
               <div className="flex flex-wrap gap-3">
                 <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
@@ -185,7 +185,7 @@ export default function Home() {
             Ablauf der Behandlung
           </h2>
           <p className="text-dark/50 text-center mb-12">
-            In drei Schritten zu Ihrem Wohlbefinden.
+            In drei Schritten zu deinem Wohlbefinden.
           </p>
           <div className="space-y-8">
             {steps.map((step) => (
@@ -302,10 +302,10 @@ export default function Home() {
       <section className="section-padding bg-dark text-center">
         <div className="container-max">
           <h2 className="text-3xl font-heading font-bold text-white mb-3">
-            Bereit für Ihre Balance?
+            Bereit für deine Balance?
           </h2>
           <p className="text-white/40 max-w-md mx-auto mb-8">
-            Vereinbaren Sie Ihren Termin und starten Sie Ihren Weg zu mehr Wohlbefinden.
+            Vereinbare deinen Termin und starte deinen Weg zu mehr Wohlbefinden.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className="btn-primary !bg-sage-400 hover:!bg-sage-300">

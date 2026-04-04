@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s | BIORESONANZ am See",
   },
   description:
-    "Bioresonanzpraxis in Jois am Neusiedler See. HOLOSAN© Bioresonanzmethode bei energetischen Blockaden und Dysbalancen. Ilse Müller - Ihre Expertin für ganzheitliches Wohlbefinden.",
+    "Bioresonanzpraxis in Jois am Neusiedler See. HOLOSAN© Bioresonanzmethode bei energetischen Blockaden und Dysbalancen. Ilse Müller - deine Expertin für ganzheitliches Wohlbefinden.",
   keywords: [
     "Bioresonanz",
     "HOLOSAN",
