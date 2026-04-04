@@ -88,7 +88,7 @@ export default function InfoEckePage() {
         <div className="container-max text-center">
           <h1 className="text-4xl font-heading font-bold mb-3">Info-Ecke</h1>
           <p className="text-dark/50 max-w-lg mx-auto">
-            Wissenswertes rund um Gesundheit, Ernährung und Körper.
+            Wissenswertes rund um Wohlbefinden, Ernährung und Körper.
           </p>
         </div>
       </section>

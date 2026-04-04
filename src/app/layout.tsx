@@ -6,9 +6,9 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "BIORESONANZ am See | Ilse Müller | Jois am Neusiedler See",
   description:
-    "Bioresonanzpraxis in Jois am Neusiedler See. HOLOSAN© Bioresonanzmethode bei energetischen Blockaden und Dysbalancen. Ilse Müller - Ihre Expertin für ganzheitliche Gesundheit.",
+    "Bioresonanzpraxis in Jois am Neusiedler See. HOLOSAN© Bioresonanzmethode bei energetischen Blockaden und Dysbalancen. Ilse Müller - Ihre Expertin für ganzheitliches Wohlbefinden.",
   keywords:
-    "Bioresonanz, HOLOSAN, Jois, Neusiedler See, Energetik, Gesundheit, Ilse Müller",
+    "Bioresonanz, HOLOSAN, Jois, Neusiedler See, Energetik, Wohlbefinden, Ilse Müller",
   icons: {
     icon: "/favicon.png",
     apple: "/favicon.png",

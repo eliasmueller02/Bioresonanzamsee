@@ -61,17 +61,6 @@ const services = [
       "Optional: Ayurvedische Ernährungstipps",
     ],
   },
-  {
-    title: "HOLOSAN-VET",
-    price: "160",
-    duration: "ca. 2 Stunden",
-    features: [
-      "Bioresonanz für Hunde",
-      "Sanfte, schmerzfreie Anwendung",
-      "Fördert Balance und Regeneration",
-      "Nur nach Terminvereinbarung",
-    ],
-  },
 ];
 
 export default function LeistungenPage() {
@@ -86,7 +75,7 @@ export default function LeistungenPage() {
             Alle Leistungen und Preise transparent auf einen Blick.
           </p>
           <Image
-            src="/images/holosan-equipment.jpeg"
+            src="/images/holosan-setup.jpeg"
             alt="HOLOSAN Bioresonanz Geräte"
             width={480}
             height={320}

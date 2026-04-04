@@ -213,7 +213,6 @@ export default function Home() {
             {[
               "Ärztlich verordnungsfähig",
               "Funktioniert bis 3 Meter Distanz",
-              "Relevant für Privatversicherungen",
               "Steuerlich absetzbar (Arbeitnehmerveranlagung)",
               "Anerkannte energetische Methode",
               "Ersetzt nicht den Arztbesuch",

@@ -36,7 +36,7 @@ const partners = [
   {
     name: "BIOGENA",
     category: "Nahrungsergänzung",
-    description: "Gesundheits- und Wellnessprodukte, individuell auf persönliche Bedürfnisse abgestimmt.",
+    description: "Wohlbefinden- und Wellnessprodukte, individuell auf persönliche Bedürfnisse abgestimmt.",
     url: "https://www.biogena.com",
     promo: "Code AD1345173: €25 Rabatt ab €75 Bestellwert",
   },
@@ -75,7 +75,7 @@ export default function KooperationenPage() {
         <div className="container-max text-center">
           <h1 className="text-4xl font-heading font-bold mb-3">Kooperationen</h1>
           <p className="text-dark/50 max-w-lg mx-auto">
-            Starke Partner für Ihre ganzheitliche Gesundheit.
+            Starke Partner für Ihr ganzheitliches Wohlbefinden.
           </p>
         </div>
       </section>
