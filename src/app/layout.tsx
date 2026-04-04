@@ -9,6 +9,10 @@ export const metadata: Metadata = {
     "Bioresonanzpraxis in Jois am Neusiedler See. HOLOSAN© Bioresonanzmethode bei energetischen Blockaden und Dysbalancen. Ilse Müller - Ihre Expertin für ganzheitliche Gesundheit.",
   keywords:
     "Bioresonanz, HOLOSAN, Jois, Neusiedler See, Energetik, Gesundheit, Ilse Müller",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

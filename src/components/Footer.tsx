@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
@@ -8,9 +9,13 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-10">
           <div>
             <div className="flex items-center gap-2.5 mb-3">
-              <div className="w-7 h-7 rounded-md bg-sage-600 flex items-center justify-center">
-                <span className="text-white font-heading font-bold text-xs">B</span>
-              </div>
+              <Image
+                src="/images/logo.png"
+                alt="BIORESONANZ am See"
+                width={28}
+                height={28}
+                className="rounded-full"
+              />
               <span className="font-heading font-semibold text-white text-sm tracking-tight">
                 BIORESONANZ <span className="text-sage-400 font-normal">am See</span>
               </span>
@@ -35,10 +40,7 @@ export default function Footer() {
                 { href: "/kontakt", label: "Kontakt" },
               ].map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="hover:text-white transition-colors"
-                  >
+                  <Link href={link.href} className="hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -73,7 +75,7 @@ export default function Footer() {
               </a>
               <span className="text-white/20">|</span>
               <a
-                href="https://www.instagram.com/bioresonanz_am_see"
+                href="https://www.instagram.com/bioresonanz_am_see/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs hover:text-white transition-colors"

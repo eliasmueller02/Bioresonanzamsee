@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Clock, Check, CreditCard } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -81,9 +82,16 @@ export default function LeistungenPage() {
           <h1 className="text-4xl font-heading font-bold mb-3">
             Preise & Leistungen
           </h1>
-          <p className="text-dark/50 max-w-lg mx-auto">
+          <p className="text-dark/50 max-w-lg mx-auto mb-8">
             Alle Leistungen und Preise transparent auf einen Blick.
           </p>
+          <Image
+            src="/images/holosan-equipment.jpeg"
+            alt="HOLOSAN Bioresonanz Geräte"
+            width={480}
+            height={320}
+            className="rounded-xl mx-auto"
+          />
         </div>
       </section>
 
@@ -119,7 +127,7 @@ export default function LeistungenPage() {
                   ))}
                 </ul>
                 <a
-                  href="https://www.bioresonanzamsee.at/termine-online"
+                  href="https://myhellocash.com/widget/bioresonanz-am-see-e-u-121619"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`block text-center w-full py-2 rounded-lg text-sm font-medium transition-colors ${

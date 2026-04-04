@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { GraduationCap, Award } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -12,6 +13,7 @@ const certifications = [
   { year: "2021", title: "HOLOSAN© Bioresonanz-Praktikerin", detail: "HOLOSAN© Akademie" },
   { year: "2021", title: "Vegane Ernährung Mütter & Kinder", detail: "Spezialisierung" },
   { year: "2022", title: "Dunkelfeldmikroskopie", detail: "Phoenix Healing" },
+  { year: "2023", title: "HOLOSAN© SPORT Konzept", detail: "HOLOSAN© Akademie" },
   { year: "2023", title: "Vitalnährstoff-Therapie", detail: "Seminar" },
   { year: "2024", title: "Mentalfeld-Technik Level I", detail: "Dr. Dietrich Klinghardt" },
 ];
@@ -30,20 +32,42 @@ export default function UeberMichPage() {
   return (
     <>
       <section className="section-padding pt-32 section-bg">
-        <div className="container-max max-w-3xl">
-          <div className="flex flex-col sm:flex-row items-center gap-8">
-            <div className="w-32 h-32 rounded-full bg-sage-200 flex items-center justify-center shrink-0">
-              <span className="text-3xl font-heading font-bold text-sage-700">IM</span>
+        <div className="container-max max-w-4xl">
+          <div className="grid md:grid-cols-5 gap-10 items-center">
+            <div className="md:col-span-2">
+              <Image
+                src="/images/praxis-detail.jpeg"
+                alt="Ilse Müller"
+                width={400}
+                height={480}
+                className="rounded-xl w-full object-cover"
+                priority
+              />
             </div>
-            <div>
+            <div className="md:col-span-3">
               <h1 className="text-4xl font-heading font-bold mb-2">Ilse Müller</h1>
-              <p className="text-sage-600 font-medium text-sm mb-3">
+              <p className="text-sage-600 font-medium text-sm mb-4">
                 HOLOSAN© Bioresonanz-Praktikerin
               </p>
               <p className="text-dark/50 leading-relaxed">
                 Geboren 1976 in Wien. Praxis in Jois am Neusiedler See, seit
                 2023 im neuen Tiny House in der Bahnstraße.
               </p>
+              <div className="mt-6 flex items-center gap-4">
+                <Image
+                  src="/images/pruefsiegel-2026.png"
+                  alt="BRGOE Prüfsiegel 2026"
+                  width={56}
+                  height={56}
+                />
+                <Image
+                  src="/images/basenbasics-logo.png"
+                  alt="BASENbasics"
+                  width={56}
+                  height={56}
+                  className="rounded-full"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -67,6 +91,23 @@ export default function UeberMichPage() {
               Seit 2024 biete ich unter dem Label <strong>BASENbasics</strong>{" "}
               gekeimte Lebensmittelprodukte für bessere Verträglichkeit an.
             </p>
+          </div>
+
+          <div className="mt-10 grid sm:grid-cols-2 gap-4">
+            <Image
+              src="/images/ilse-mueller.png"
+              alt="Ilse Müller vor der Praxis"
+              width={400}
+              height={400}
+              className="rounded-xl w-full object-cover"
+            />
+            <Image
+              src="/images/zertifikat-holosan-sport.png"
+              alt="HOLOSAN Sport Zertifikat"
+              width={400}
+              height={400}
+              className="rounded-xl w-full object-cover"
+            />
           </div>
         </div>
       </section>

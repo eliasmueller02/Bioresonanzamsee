@@ -15,7 +15,9 @@
       "Bash(mdfind -name gh)",
       "Bash(grep -i \"bin/gh$\")",
       "Bash(git remote:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(sips -s format jpeg \"bioresonanzamseebilder/IMG_5048.heic\" --out public/images/praxis-detail.jpeg)",
+      "Bash(git rm:*)"
     ]
   }
 }

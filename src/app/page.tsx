@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   Brain,
   Heart,
@@ -11,6 +12,8 @@ import {
   Star,
   Check,
 } from "lucide-react";
+
+const CTA_URL = "https://myhellocash.com/widget/bioresonanz-am-see-e-u-121619";
 
 const treatments = [
   { icon: Brain, title: "Kopfdruck", desc: "Spannungsgefühle und Druck im Kopf" },
@@ -47,34 +50,40 @@ export default function Home() {
       {/* Hero */}
       <section className="min-h-[85vh] flex items-center bg-sand-50">
         <div className="container-max py-24 px-6">
-          <div className="max-w-2xl">
-            <p className="text-sage-600 font-medium text-sm tracking-wide mb-4">
-              HOLOSAN© Bioresonanzmethode
-            </p>
-            <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-bold text-dark leading-[1.15] mb-6">
-              Ihre Energie.
-              <br />
-              Ihre Balance.
-              <br />
-              <span className="text-sage-600">Ihr Wohlbefinden.</span>
-            </h1>
-            <p className="text-dark/50 text-lg max-w-lg mb-10 leading-relaxed">
-              Sanfte, schmerzfreie Bioresonanzmethode bei energetischen
-              Blockaden und Dysbalancen. Ihre Praxis in Jois am Neusiedler
-              See.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <a
-                href="https://www.bioresonanzamsee.at/termine-online"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary"
-              >
-                Termin vereinbaren
-              </a>
-              <Link href="/leistungen" className="btn-outline">
-                Leistungen ansehen
-              </Link>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-sage-600 font-medium text-sm tracking-wide mb-4">
+                HOLOSAN© Bioresonanzmethode
+              </p>
+              <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-bold text-dark leading-[1.15] mb-6">
+                Ihre Energie.
+                <br />
+                Ihre Balance.
+                <br />
+                <span className="text-sage-600">Ihr Wohlbefinden.</span>
+              </h1>
+              <p className="text-dark/50 text-lg max-w-lg mb-10 leading-relaxed">
+                Sanfte, schmerzfreie Bioresonanzmethode bei energetischen
+                Blockaden und Dysbalancen. Ihre Praxis in Jois am Neusiedler See.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
+                  Termin vereinbaren
+                </a>
+                <Link href="/leistungen" className="btn-outline">
+                  Leistungen ansehen
+                </Link>
+              </div>
+            </div>
+            <div className="hidden lg:block">
+              <Image
+                src="/images/praxis-collage.png"
+                alt="BIORESONANZ am See - Praxis und Geräte"
+                width={560}
+                height={560}
+                className="rounded-2xl"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -103,9 +112,7 @@ export default function Home() {
                 <div className="w-10 h-10 rounded-lg bg-sage-100 flex items-center justify-center mx-auto mb-3">
                   <Check className="text-sage-600" size={18} />
                 </div>
-                <h3 className="font-heading font-semibold text-sm mb-1">
-                  {item.label}
-                </h3>
+                <h3 className="font-heading font-semibold text-sm mb-1">{item.label}</h3>
                 <p className="text-dark/40 text-sm">{item.sub}</p>
               </div>
             ))}
@@ -126,9 +133,7 @@ export default function Home() {
             {treatments.map((t) => (
               <div key={t.title} className="card-hover">
                 <t.icon className="text-sage-500 mb-3" size={20} />
-                <h3 className="font-heading font-semibold text-sm mb-1">
-                  {t.title}
-                </h3>
+                <h3 className="font-heading font-semibold text-sm mb-1">{t.title}</h3>
                 <p className="text-dark/40 text-sm leading-relaxed">{t.desc}</p>
               </div>
             ))}
@@ -136,8 +141,45 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Ablauf */}
+      {/* Geräte */}
       <section className="section-padding">
+        <div className="container-max">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+              <h2 className="text-3xl font-heading font-bold mb-4">
+                Modernste Technologie
+              </h2>
+              <p className="text-dark/50 leading-relaxed mb-6">
+                Ich arbeite mit HOLOSAN© Bioresonanzgeräten der neuesten
+                Generation - entwickelt in Österreich und hergestellt in
+                Deutschland.
+              </p>
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/images/pruefsiegel-2026.png"
+                  alt="BRGOE Prüfsiegel 2026"
+                  width={72}
+                  height={72}
+                />
+                <div>
+                  <p className="text-sm font-medium text-dark">Geprüft & Zertifiziert</p>
+                  <p className="text-xs text-dark/40">Bioresonanz Gesellschaft Österreich</p>
+                </div>
+              </div>
+            </div>
+            <Image
+              src="/images/holosan-setup.jpeg"
+              alt="HOLOSAN Bioresonanz Equipment"
+              width={520}
+              height={390}
+              className="rounded-xl"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Ablauf */}
+      <section className="section-padding section-bg">
         <div className="container-max max-w-3xl">
           <h2 className="text-3xl font-heading font-bold mb-3 text-center">
             Ablauf der Behandlung
@@ -149,17 +191,11 @@ export default function Home() {
             {steps.map((step) => (
               <div key={step.num} className="flex gap-6 items-start">
                 <div className="w-10 h-10 rounded-lg bg-sage-100 flex items-center justify-center shrink-0">
-                  <span className="font-heading font-bold text-sage-700 text-sm">
-                    {step.num}
-                  </span>
+                  <span className="font-heading font-bold text-sage-700 text-sm">{step.num}</span>
                 </div>
                 <div>
-                  <h3 className="font-heading font-semibold mb-1">
-                    {step.title}
-                  </h3>
-                  <p className="text-dark/50 text-sm leading-relaxed">
-                    {step.desc}
-                  </p>
+                  <h3 className="font-heading font-semibold mb-1">{step.title}</h3>
+                  <p className="text-dark/50 text-sm leading-relaxed">{step.desc}</p>
                 </div>
               </div>
             ))}
@@ -168,7 +204,7 @@ export default function Home() {
       </section>
 
       {/* Gut zu wissen */}
-      <section className="section-padding section-bg">
+      <section className="section-padding">
         <div className="container-max max-w-3xl">
           <h2 className="text-2xl font-heading font-bold mb-8 text-center">
             Gut zu wissen
@@ -182,7 +218,7 @@ export default function Home() {
               "Anerkannte energetische Methode",
               "Ersetzt nicht den Arztbesuch",
             ].map((item) => (
-              <div key={item} className="flex items-center gap-3 bg-white rounded-lg px-4 py-3 border border-sand-200">
+              <div key={item} className="flex items-center gap-3 bg-sand-50 rounded-lg px-4 py-3 border border-sand-200">
                 <Check className="text-sage-500 shrink-0" size={16} />
                 <span className="text-sm text-dark/60">{item}</span>
               </div>
@@ -198,23 +234,13 @@ export default function Home() {
             Bereit für Ihre Balance?
           </h2>
           <p className="text-white/40 max-w-md mx-auto mb-8">
-            Vereinbaren Sie Ihren Termin und starten Sie Ihren Weg zu mehr
-            Wohlbefinden.
+            Vereinbaren Sie Ihren Termin und starten Sie Ihren Weg zu mehr Wohlbefinden.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            <a
-              href="https://www.bioresonanzamsee.at/termine-online"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary !bg-sage-500 hover:!bg-sage-400"
-            >
-              Termin buchen
-              <ArrowRight className="inline ml-2" size={16} />
+            <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className="btn-primary !bg-sage-500 hover:!bg-sage-400">
+              Termin buchen <ArrowRight className="inline ml-2" size={16} />
             </a>
-            <a
-              href="mailto:praxis@bioresonanzamsee.at"
-              className="btn-outline !border-white/20 !text-white/70 hover:!text-white hover:!bg-white/5"
-            >
+            <a href="mailto:praxis@bioresonanzamsee.at" className="btn-outline !border-white/20 !text-white/70 hover:!text-white hover:!bg-white/5">
               E-Mail schreiben
             </a>
           </div>

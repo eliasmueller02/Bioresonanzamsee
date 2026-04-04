@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -20,10 +21,14 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-sand-200">
       <div className="container-max flex items-center justify-between h-16 px-6">
         <Link href="/" className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-lg bg-sage-600 flex items-center justify-center">
-            <span className="text-white font-heading font-bold text-sm">B</span>
-          </div>
-          <span className="font-heading font-semibold text-dark tracking-tight">
+          <Image
+            src="/images/logo.png"
+            alt="BIORESONANZ am See"
+            width={36}
+            height={36}
+            className="rounded-full"
+          />
+          <span className="font-heading font-semibold text-dark tracking-tight text-sm">
             BIORESONANZ <span className="text-sage-600 font-normal">am See</span>
           </span>
         </Link>
@@ -40,7 +45,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="https://www.bioresonanzamsee.at/termine-online"
+            href="https://myhellocash.com/widget/bioresonanz-am-see-e-u-121619"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary ml-4 !text-sm !py-2 !px-5"
@@ -74,7 +79,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="https://www.bioresonanzamsee.at/termine-online"
+              href="https://myhellocash.com/widget/bioresonanz-am-see-e-u-121619"
               target="_blank"
               rel="noopener noreferrer"
               className="block text-center btn-primary mt-3 text-sm"

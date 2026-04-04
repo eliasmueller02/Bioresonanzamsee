@@ -58,7 +58,7 @@ export default function KontaktPage() {
                     Facebook <ExternalLink size={12} />
                   </a>
                   <a
-                    href="https://www.instagram.com/bioresonanz_am_see"
+                    href="https://www.instagram.com/bioresonanz_am_see/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-between text-sm text-dark/50 hover:text-sage-600 transition-colors"
@@ -69,7 +69,7 @@ export default function KontaktPage() {
               </div>
 
               <a
-                href="https://www.bioresonanzamsee.at/termine-online"
+                href="https://myhellocash.com/widget/bioresonanz-am-see-e-u-121619"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary block text-center text-sm"
