@@ -1,9 +1,9 @@
-import { Clock, Euro, CheckCircle2, CreditCard, ArrowRight } from "lucide-react";
+import { Clock, Check, CreditCard } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Preise & Leistungen | BIORESONANZ am See",
-  description: "Ersttermin, Folgetermin, Kaltrotlicht, Kälteanwendung, HRV-Messung und HOLOSAN-VET. Alle Preise und Leistungen auf einen Blick.",
+  description: "Ersttermin, Folgetermin, Kaltrotlicht, Kälteanwendung, HRV-Messung und HOLOSAN-VET.",
 };
 
 const services = [
@@ -14,7 +14,7 @@ const services = [
     highlight: true,
     features: [
       "Energiefeldmessung (200 energetische Werte)",
-      "HRV-Messung mit Atemübungsprogramm für zu Hause",
+      "HRV-Messung mit Atemübungsprogramm",
       "Umfassende BIORESONANZ-Austestung",
       "30-minütige Frequenzanwendung",
       "Detaillierte Auswertungen und Infoblätter",
@@ -24,7 +24,6 @@ const services = [
     title: "Folgetermin",
     price: "100",
     duration: "ca. 1 Stunde",
-    highlight: false,
     features: [
       "Kontroll-Energiefeldmessung",
       "Vergleich mit vorherigen Messungen",
@@ -35,10 +34,9 @@ const services = [
     title: "REPULS Kalt-Rotlicht",
     price: "35",
     duration: "ca. 15 Minuten",
-    highlight: false,
     features: [
-      "Pulsierendes, tiefenwirksames rotes Kaltlicht",
-      "Durchdringt Gewebe und aktiviert Zellenergie",
+      "Pulsierendes, tiefenwirksames Kaltlicht",
+      "Aktiviert Zellenergie",
       "Unterstützt natürliche Regeneration",
     ],
   },
@@ -46,29 +44,26 @@ const services = [
     title: "Kälteanwendung",
     price: "35",
     duration: "ca. 15 Minuten",
-    highlight: false,
     features: [
       "Core Cooling Technologie",
-      "Kältetherapie kombiniert mit Vakuumdruck",
-      "Stimuliert Durchblutung ohne Unbehagen",
+      "Kältetherapie mit Vakuumdruck",
+      "Stimuliert Durchblutung",
     ],
   },
   {
-    title: "Herzraten-Variabilität (HRV)",
+    title: "HRV-Messung",
     price: "79",
     duration: "ca. 20 Minuten",
-    highlight: false,
     features: [
-      "HRV-Messung und Analyse",
+      "Herzraten-Variabilität Analyse",
       "Persönliches Atemübungsprogramm",
       "Optional: Ayurvedische Ernährungstipps",
     ],
   },
   {
-    title: "HOLOSAN-VET (Tiere)",
+    title: "HOLOSAN-VET",
     price: "160",
     duration: "ca. 2 Stunden",
-    highlight: false,
     features: [
       "Bioresonanz für Hunde",
       "Sanfte, schmerzfreie Anwendung",
@@ -81,59 +76,44 @@ const services = [
 export default function LeistungenPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="gradient-bg section-padding pt-32">
+      <section className="section-padding pt-32 section-bg">
         <div className="container-max text-center">
-          <h1 className="text-4xl sm:text-5xl font-heading font-bold mb-4">
-            Preise & <span className="text-primary-600">Leistungen</span>
+          <h1 className="text-4xl font-heading font-bold mb-3">
+            Preise & Leistungen
           </h1>
-          <p className="text-dark/60 max-w-2xl mx-auto text-lg">
-            Transparente Preise für Ihre ganzheitliche Gesundheit. Alle
-            Leistungen auf einen Blick.
+          <p className="text-dark/50 max-w-lg mx-auto">
+            Alle Leistungen und Preise transparent auf einen Blick.
           </p>
         </div>
       </section>
 
-      {/* Services Grid */}
-      <section className="section-padding bg-white">
+      <section className="section-padding">
         <div className="container-max">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {services.map((s) => (
               <div
                 key={s.title}
-                className={`card relative ${
-                  s.highlight
-                    ? "ring-2 ring-primary-300 shadow-lg"
-                    : ""
-                }`}
+                className={`card relative ${s.highlight ? "ring-1 ring-sage-400" : ""}`}
               >
                 {s.highlight && (
-                  <div className="absolute -top-3 left-6 bg-primary-300 text-dark text-xs font-bold px-3 py-1 rounded-full">
+                  <span className="absolute -top-2.5 left-5 bg-sage-600 text-white text-[11px] font-medium px-2.5 py-0.5 rounded-md">
                     Empfohlen
-                  </div>
+                  </span>
                 )}
-                <h3 className="font-heading font-bold text-xl mb-3">
-                  {s.title}
-                </h3>
+                <h3 className="font-heading font-semibold mb-2">{s.title}</h3>
                 <div className="flex items-baseline gap-1 mb-1">
-                  <span className="text-3xl font-heading font-bold text-primary-600">
+                  <span className="text-2xl font-heading font-bold text-sage-700">
                     &euro;{s.price}
                   </span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-dark/50 mb-5">
-                  <Clock size={14} />
+                <p className="flex items-center gap-1.5 text-xs text-dark/40 mb-5">
+                  <Clock size={12} />
                   {s.duration}
-                </div>
-                <ul className="space-y-2.5 mb-6">
+                </p>
+                <ul className="space-y-2 mb-6">
                   {s.features.map((f) => (
-                    <li
-                      key={f}
-                      className="flex items-start gap-2 text-sm text-dark/70"
-                    >
-                      <CheckCircle2
-                        className="text-primary-500 shrink-0 mt-0.5"
-                        size={16}
-                      />
+                    <li key={f} className="flex items-start gap-2 text-sm text-dark/60">
+                      <Check className="text-sage-500 shrink-0 mt-0.5" size={14} />
                       {f}
                     </li>
                   ))}
@@ -142,10 +122,10 @@ export default function LeistungenPage() {
                   href="https://www.bioresonanzamsee.at/termine-online"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`block text-center w-full py-2.5 rounded-full font-heading font-semibold text-sm transition-all ${
+                  className={`block text-center w-full py-2 rounded-lg text-sm font-medium transition-colors ${
                     s.highlight
-                      ? "bg-primary-300 text-dark hover:bg-primary-400"
-                      : "bg-gray-100 text-dark/70 hover:bg-primary-100"
+                      ? "bg-sage-600 text-white hover:bg-sage-700"
+                      : "bg-sand-100 text-dark/60 hover:bg-sage-100"
                   }`}
                 >
                   Termin buchen
@@ -156,37 +136,22 @@ export default function LeistungenPage() {
         </div>
       </section>
 
-      {/* Payment Info */}
-      <section className="section-padding bg-primary-50/50">
-        <div className="container-max">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-heading font-bold mb-6 text-center">
-              Zahlungsinformationen
-            </h2>
-            <div className="grid sm:grid-cols-2 gap-4">
-              {[
-                "Barzahlung",
-                "Kartenzahlung",
-                "Gutscheine",
-                "Bitcoin",
-              ].map((m) => (
-                <div
-                  key={m}
-                  className="flex items-center gap-3 bg-white rounded-xl p-4"
-                >
-                  <CreditCard className="text-primary-500" size={20} />
-                  <span className="font-medium">{m}</span>
-                </div>
-              ))}
-            </div>
-            <div className="mt-8 bg-white rounded-2xl p-6 border border-amber-200">
-              <p className="text-sm text-dark/70">
-                <strong className="text-dark">Stornierung:</strong> Für nicht
-                wahrgenommene Termine ohne vorherige Absage wird eine Rechnung
-                in Höhe von 75% des Terminwertes ausgestellt.
-              </p>
-            </div>
+      <section className="section-padding section-bg !py-16">
+        <div className="container-max max-w-2xl">
+          <h2 className="text-xl font-heading font-bold mb-5 text-center">
+            Zahlung & Stornierung
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+            {["Barzahlung", "Karte", "Gutscheine", "Bitcoin"].map((m) => (
+              <div key={m} className="card text-center !py-3">
+                <span className="text-sm text-dark/60">{m}</span>
+              </div>
+            ))}
           </div>
+          <p className="text-xs text-dark/40 text-center leading-relaxed">
+            Für nicht wahrgenommene Termine ohne vorherige Absage wird eine
+            Rechnung in Höhe von 75% des Terminwertes ausgestellt.
+          </p>
         </div>
       </section>
     </>

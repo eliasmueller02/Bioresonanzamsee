@@ -7,12 +7,12 @@ export const metadata: Metadata = {
 export default function ImpressumPage() {
   return (
     <section className="section-padding pt-32">
-      <div className="container-max max-w-3xl">
-        <h1 className="text-4xl font-heading font-bold mb-8">Impressum</h1>
+      <div className="container-max max-w-2xl">
+        <h1 className="text-3xl font-heading font-bold mb-8">Impressum</h1>
 
-        <div className="prose prose-gray max-w-none space-y-6 text-dark/70 leading-relaxed">
+        <div className="space-y-6 text-dark/55 leading-relaxed text-sm">
           <div>
-            <h2 className="text-xl font-heading font-semibold text-dark mb-2">
+            <h2 className="text-base font-heading font-semibold text-dark mb-2">
               Angaben gemäß § 5 ECG
             </h2>
             <p>
@@ -29,14 +29,14 @@ export default function ImpressumPage() {
           </div>
 
           <div>
-            <h2 className="text-xl font-heading font-semibold text-dark mb-2">
+            <h2 className="text-base font-heading font-semibold text-dark mb-2">
               Kontakt
             </h2>
             <p>
               E-Mail:{" "}
               <a
                 href="mailto:praxis@bioresonanzamsee.at"
-                className="text-primary-600 hover:underline"
+                className="text-sage-600 hover:underline"
               >
                 praxis@bioresonanzamsee.at
               </a>
@@ -44,7 +44,7 @@ export default function ImpressumPage() {
               Website:{" "}
               <a
                 href="https://bioresonanzamsee.at"
-                className="text-primary-600 hover:underline"
+                className="text-sage-600 hover:underline"
               >
                 bioresonanzamsee.at
               </a>
@@ -52,14 +52,14 @@ export default function ImpressumPage() {
           </div>
 
           <div>
-            <h2 className="text-xl font-heading font-semibold text-dark mb-2">
+            <h2 className="text-base font-heading font-semibold text-dark mb-2">
               Unternehmensgegenstand
             </h2>
             <p>Energetische Anwendungen mittels Bioresonanzmethode.</p>
           </div>
 
           <div>
-            <h2 className="text-xl font-heading font-semibold text-dark mb-2">
+            <h2 className="text-base font-heading font-semibold text-dark mb-2">
               Haftungsausschluss
             </h2>
             <p>
@@ -75,7 +75,7 @@ export default function ImpressumPage() {
           </div>
 
           <div>
-            <h2 className="text-xl font-heading font-semibold text-dark mb-2">
+            <h2 className="text-base font-heading font-semibold text-dark mb-2">
               Urheberrecht
             </h2>
             <p>

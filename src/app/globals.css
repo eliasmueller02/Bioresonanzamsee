@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 @layer base {
   html {
     scroll-behavior: smooth;
   }
   body {
-    @apply font-body text-dark bg-light;
+    @apply font-body text-dark bg-light antialiased;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
@@ -18,23 +18,26 @@
 
 @layer components {
   .section-padding {
-    @apply py-20 px-4 sm:px-6 lg:px-8;
+    @apply py-24 px-6 sm:px-8 lg:px-12;
   }
   .container-max {
-    @apply max-w-6xl mx-auto;
+    @apply max-w-5xl mx-auto;
   }
   .btn-primary {
-    @apply inline-block bg-primary-300 text-dark font-heading font-semibold px-8 py-3 rounded-full
-           hover:bg-primary-400 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5;
+    @apply inline-block bg-sage-600 text-white font-heading font-medium px-7 py-3 rounded-lg
+           hover:bg-sage-700 transition-all duration-200;
   }
   .btn-outline {
-    @apply inline-block border-2 border-primary-300 text-dark font-heading font-semibold px-8 py-3 rounded-full
-           hover:bg-primary-300 transition-all duration-300;
+    @apply inline-block border border-sage-300 text-dark font-heading font-medium px-7 py-3 rounded-lg
+           hover:bg-sage-50 transition-all duration-200;
   }
   .card {
-    @apply bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6;
+    @apply bg-white rounded-xl border border-sand-200 p-6 transition-all duration-200;
   }
-  .gradient-bg {
-    @apply bg-gradient-to-br from-primary-100/30 via-white to-primary-50/40;
+  .card-hover {
+    @apply card hover:border-sage-300 hover:shadow-sm;
+  }
+  .section-bg {
+    @apply bg-sand-50;
   }
 }

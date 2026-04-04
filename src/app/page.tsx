@@ -9,67 +9,35 @@ import {
   ArrowRight,
   Sparkles,
   Star,
-  CheckCircle2,
+  Check,
 } from "lucide-react";
 
 const treatments = [
-  {
-    icon: Brain,
-    title: "Druck im Kopf",
-    desc: "Unterstützung bei Kopfdruck und Spannungsgefühlen durch gezielte Frequenzanwendung.",
-  },
-  {
-    icon: Heart,
-    title: "Unwohlsein im Darm",
-    desc: "Harmonisierung des Verdauungssystems und Förderung des Wohlbefindens.",
-  },
-  {
-    icon: Sparkles,
-    title: "Psychische Belastungen",
-    desc: "Energetische Balance bei Stress, Erschöpfung und emotionaler Belastung.",
-  },
-  {
-    icon: Zap,
-    title: "Konzentration",
-    desc: "Steigerung der geistigen Leistungsfähigkeit und Fokus.",
-  },
-  {
-    icon: Shield,
-    title: "Immunsystem",
-    desc: "Stärkung der körpereigenen Abwehrkräfte und Vitalität.",
-  },
-  {
-    icon: Leaf,
-    title: "Hautbild",
-    desc: "Verbesserung des Hautbildes durch energetische Harmonisierung.",
-  },
-  {
-    icon: Activity,
-    title: "Rücken & Bewegung",
-    desc: "Unterstützung bei Rückenbeschwerden und Bewegungseinschränkungen.",
-  },
-  {
-    icon: Star,
-    title: "Sport & Leistung",
-    desc: "HOLOSAN© SPORT Konzept für Hobby- und Leistungssportler.",
-  },
+  { icon: Brain, title: "Kopfdruck", desc: "Spannungsgefühle und Druck im Kopf" },
+  { icon: Heart, title: "Verdauung", desc: "Unwohlsein und Dysbalancen im Darm" },
+  { icon: Sparkles, title: "Psyche", desc: "Stress, Erschöpfung und Belastungen" },
+  { icon: Zap, title: "Konzentration", desc: "Geistige Leistungsfähigkeit und Fokus" },
+  { icon: Shield, title: "Immunsystem", desc: "Körpereigene Abwehrkräfte stärken" },
+  { icon: Leaf, title: "Hautbild", desc: "Energetische Harmonisierung der Haut" },
+  { icon: Activity, title: "Rücken", desc: "Beschwerden und Bewegungseinschränkungen" },
+  { icon: Star, title: "Sport", desc: "HOLOSAN© SPORT für Athleten" },
 ];
 
 const steps = [
   {
-    num: "01",
+    num: "1",
     title: "Austestung",
-    desc: "Schmerzfreie Messung mit dem HOLOSAN© Gerät über Klebeelektroden an der Handfläche. Über 200 energetische Werte werden erfasst.",
+    desc: "Schmerzfreie Messung mit dem HOLOSAN© Gerät. Über 200 energetische Werte werden erfasst.",
   },
   {
-    num: "02",
+    num: "2",
     title: "Analyse",
-    desc: "Auswertung der Messergebnisse und Identifizierung energetischer Blockaden und Dysbalancen im Körper.",
+    desc: "Auswertung der Ergebnisse und Identifizierung energetischer Blockaden.",
   },
   {
-    num: "03",
+    num: "3",
     title: "Anwendung",
-    desc: "Individuell abgestimmte Frequenzanwendung zur Aktivierung der Selbstheilungskräfte des Körpers.",
+    desc: "Individuell abgestimmte Frequenzanwendung zur Aktivierung der Selbstheilungskräfte.",
   },
 ];
 
@@ -77,32 +45,25 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center gradient-bg overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary-200/20 rounded-full blur-3xl" />
-          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-primary-100/30 rounded-full blur-3xl" />
-        </div>
-        <div className="container-max relative z-10 py-20 px-4">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-primary-100/60 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <Sparkles size={16} />
+      <section className="min-h-[85vh] flex items-center bg-sand-50">
+        <div className="container-max py-24 px-6">
+          <div className="max-w-2xl">
+            <p className="text-sage-600 font-medium text-sm tracking-wide mb-4">
               HOLOSAN© Bioresonanzmethode
-            </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-dark leading-tight mb-6">
+            </p>
+            <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-bold text-dark leading-[1.15] mb-6">
               Ihre Energie.
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-primary-700">
-                Ihre Balance.
-              </span>
+              Ihre Balance.
               <br />
-              Ihr Wohlbefinden.
+              <span className="text-sage-600">Ihr Wohlbefinden.</span>
             </h1>
-            <p className="text-lg text-dark/60 max-w-xl mb-8 leading-relaxed">
-              Die HOLOSAN© Bioresonanzmethode kann bei verschiedenen
-              energetischen Blockaden und Dysbalancen im Körper angewendet
-              werden. Willkommen in Ihrer Praxis in Jois am Neusiedler See.
+            <p className="text-dark/50 text-lg max-w-lg mb-10 leading-relaxed">
+              Sanfte, schmerzfreie Bioresonanzmethode bei energetischen
+              Blockaden und Dysbalancen. Ihre Praxis in Jois am Neusiedler
+              See.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3">
               <a
                 href="https://www.bioresonanzamsee.at/termine-online"
                 target="_blank"
@@ -119,59 +80,56 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Intro */}
-      <section className="section-padding bg-white">
+      {/* Was ist Bioresonanz */}
+      <section className="section-padding">
         <div className="container-max">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-6">
-              Was ist{" "}
-              <span className="text-primary-600">Bioresonanz</span>?
+          <div className="max-w-2xl mx-auto text-center mb-14">
+            <h2 className="text-3xl font-heading font-bold mb-4">
+              Was ist Bioresonanz?
             </h2>
-            <p className="text-dark/60 text-lg leading-relaxed mb-8">
-              Die HOLOSAN© Bioresonanzmethode ist eine sanfte, schmerzfreie
-              energetische Anwendung. Mithilfe modernster Geräte werden
-              körpereigene Frequenzmuster erfasst und harmonisiert, um die
-              Selbstheilungskräfte des Körpers zu aktivieren.
+            <p className="text-dark/50 leading-relaxed">
+              Eine sanfte, schmerzfreie energetische Anwendung. Körpereigene
+              Frequenzmuster werden erfasst und harmonisiert, um die
+              Selbstheilungskräfte zu aktivieren.
             </p>
-            <div className="grid sm:grid-cols-3 gap-6 text-sm">
-              {[
-                { label: "Schmerzfrei", desc: "Sanfte Anwendung ohne Nebenwirkungen" },
-                { label: "Bis 3m Distanz", desc: "Keine Nahkörperarbeit erforderlich" },
-                { label: "Ärztlich verordnungsfähig", desc: "Für Krankenkassen relevant" },
-              ].map((item) => (
-                <div key={item.label} className="card text-center">
-                  <CheckCircle2 className="mx-auto mb-3 text-primary-500" size={28} />
-                  <h3 className="font-heading font-semibold mb-1">{item.label}</h3>
-                  <p className="text-dark/50">{item.desc}</p>
+          </div>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {[
+              { label: "Schmerzfrei", sub: "Sanfte Anwendung" },
+              { label: "Bis 3m Distanz", sub: "Keine Nahkörperarbeit" },
+              { label: "Verordnungsfähig", sub: "Krankenkassen-relevant" },
+            ].map((item) => (
+              <div key={item.label} className="card text-center py-8">
+                <div className="w-10 h-10 rounded-lg bg-sage-100 flex items-center justify-center mx-auto mb-3">
+                  <Check className="text-sage-600" size={18} />
                 </div>
-              ))}
-            </div>
+                <h3 className="font-heading font-semibold text-sm mb-1">
+                  {item.label}
+                </h3>
+                <p className="text-dark/40 text-sm">{item.sub}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Anwendungsgebiete */}
-      <section className="section-padding gradient-bg">
+      <section className="section-padding section-bg">
         <div className="container-max">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-4">
-              Anwendungsgebiete
-            </h2>
-            <p className="text-dark/60 max-w-2xl mx-auto">
-              Die Bioresonanz kann bei vielfältigen energetischen Dysbalancen
-              unterstützend eingesetzt werden.
-            </p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <h2 className="text-3xl font-heading font-bold mb-3 text-center">
+            Anwendungsgebiete
+          </h2>
+          <p className="text-dark/50 text-center mb-12 max-w-lg mx-auto">
+            Unterstützung bei vielfältigen energetischen Dysbalancen.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {treatments.map((t) => (
-              <div key={t.title} className="card group hover:-translate-y-1">
-                <div className="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors">
-                  <t.icon className="text-primary-600" size={24} />
-                </div>
-                <h3 className="font-heading font-semibold text-lg mb-2">
+              <div key={t.title} className="card-hover">
+                <t.icon className="text-sage-500 mb-3" size={20} />
+                <h3 className="font-heading font-semibold text-sm mb-1">
                   {t.title}
                 </h3>
-                <p className="text-dark/50 text-sm leading-relaxed">{t.desc}</p>
+                <p className="text-dark/40 text-sm leading-relaxed">{t.desc}</p>
               </div>
             ))}
           </div>
@@ -179,90 +137,85 @@ export default function Home() {
       </section>
 
       {/* Ablauf */}
-      <section className="section-padding bg-white">
-        <div className="container-max">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-4">
-              So läuft Ihre Behandlung ab
-            </h2>
-            <p className="text-dark/60 max-w-2xl mx-auto">
-              In drei einfachen Schritten zu Ihrem energetischen Wohlbefinden.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
+      <section className="section-padding">
+        <div className="container-max max-w-3xl">
+          <h2 className="text-3xl font-heading font-bold mb-3 text-center">
+            Ablauf der Behandlung
+          </h2>
+          <p className="text-dark/50 text-center mb-12">
+            In drei Schritten zu Ihrem Wohlbefinden.
+          </p>
+          <div className="space-y-8">
             {steps.map((step) => (
-              <div key={step.num} className="relative">
-                <span className="text-6xl font-heading font-bold text-primary-100">
-                  {step.num}
-                </span>
-                <h3 className="font-heading font-semibold text-xl mt-2 mb-3">
-                  {step.title}
-                </h3>
-                <p className="text-dark/50 leading-relaxed">{step.desc}</p>
+              <div key={step.num} className="flex gap-6 items-start">
+                <div className="w-10 h-10 rounded-lg bg-sage-100 flex items-center justify-center shrink-0">
+                  <span className="font-heading font-bold text-sage-700 text-sm">
+                    {step.num}
+                  </span>
+                </div>
+                <div>
+                  <h3 className="font-heading font-semibold mb-1">
+                    {step.title}
+                  </h3>
+                  <p className="text-dark/50 text-sm leading-relaxed">
+                    {step.desc}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Hinweis */}
-      <section className="section-padding bg-primary-50/50">
-        <div className="container-max">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-heading font-bold mb-4">
-              Gut zu wissen
-            </h2>
-            <div className="grid sm:grid-cols-2 gap-4 text-left text-sm">
-              {[
-                "Ärztlich verordnungsfähig (relevant für Krankenkassen)",
-                "Funktioniert bis 3 Meter Distanz - keine Nahkörperarbeit",
-                "Einige österreichische Krankenkassen übernehmen Kosten",
-                "Kosten ggf. über Arbeitnehmerveranlagung absetzbar",
-                "Anerkannte energetische Anwendungsmethode",
-                "Ersetzt NICHT den Besuch beim Arzt",
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="flex items-start gap-3 bg-white rounded-xl p-4"
-                >
-                  <CheckCircle2
-                    className="text-primary-500 shrink-0 mt-0.5"
-                    size={18}
-                  />
-                  <span className="text-dark/70">{item}</span>
-                </div>
-              ))}
-            </div>
+      {/* Gut zu wissen */}
+      <section className="section-padding section-bg">
+        <div className="container-max max-w-3xl">
+          <h2 className="text-2xl font-heading font-bold mb-8 text-center">
+            Gut zu wissen
+          </h2>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              "Ärztlich verordnungsfähig",
+              "Funktioniert bis 3 Meter Distanz",
+              "Einige Krankenkassen übernehmen Kosten",
+              "Steuerlich absetzbar (Arbeitnehmerveranlagung)",
+              "Anerkannte energetische Methode",
+              "Ersetzt nicht den Arztbesuch",
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-3 bg-white rounded-lg px-4 py-3 border border-sand-200">
+                <Check className="text-sage-500 shrink-0" size={16} />
+                <span className="text-sm text-dark/60">{item}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-dark text-white text-center">
+      <section className="section-padding bg-dark text-center">
         <div className="container-max">
-          <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-4">
-            Bereit für Ihre{" "}
-            <span className="text-primary-300">Balance</span>?
+          <h2 className="text-3xl font-heading font-bold text-white mb-3">
+            Bereit für Ihre Balance?
           </h2>
-          <p className="text-white/60 max-w-xl mx-auto mb-8">
-            Vereinbaren Sie jetzt Ihren Termin und starten Sie Ihren Weg zu
-            mehr Wohlbefinden und Energie.
+          <p className="text-white/40 max-w-md mx-auto mb-8">
+            Vereinbaren Sie Ihren Termin und starten Sie Ihren Weg zu mehr
+            Wohlbefinden.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-3">
             <a
               href="https://www.bioresonanzamsee.at/termine-online"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
+              className="btn-primary !bg-sage-500 hover:!bg-sage-400"
             >
               Termin buchen
-              <ArrowRight className="inline ml-2" size={18} />
+              <ArrowRight className="inline ml-2" size={16} />
             </a>
             <a
               href="mailto:praxis@bioresonanzamsee.at"
-              className="btn-outline !border-white/30 !text-white hover:!bg-white/10"
+              className="btn-outline !border-white/20 !text-white/70 hover:!text-white hover:!bg-white/5"
             >
-              Kontakt aufnehmen
+              E-Mail schreiben
             </a>
           </div>
         </div>
