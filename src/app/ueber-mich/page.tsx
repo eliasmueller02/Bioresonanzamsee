@@ -11,11 +11,12 @@ const certifications = [
   { year: "2018", title: "Vegane Ernährungstrainerin", detail: "ecodemy" },
   { year: "2018", title: "Vegane Sportlerernährung", detail: "Spezialisierung" },
   { year: "2021", title: "HOLOSAN© Bioresonanz-Praktikerin", detail: "HOLOSAN© Akademie" },
-  { year: "2021", title: "Vegane Ernährung Mütter & Kinder", detail: "Spezialisierung" },
+  { year: "2021", title: "Vegane Ernährung Mutter & Kind", detail: "Spezialisierung" },
   { year: "2022", title: "Dunkelfeldmikroskopie", detail: "Phoenix Healing" },
   { year: "2023", title: "HOLOSAN© SPORT Konzept", detail: "HOLOSAN© Akademie" },
   { year: "2023", title: "Vitalnährstoff-Therapie", detail: "Seminar" },
   { year: "2024", title: "Mentalfeld-Technik Level I", detail: "Dr. Dietrich Klinghardt" },
+  { year: "2025", title: "Darmgesundheit & Nahrungsmittelunverträglichkeit", detail: "Spezialisierung" },
 ];
 
 const modules = [
