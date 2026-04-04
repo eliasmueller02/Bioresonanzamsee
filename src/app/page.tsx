@@ -262,6 +262,16 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <div className="text-center mt-8">
+            <a
+              href="https://www.google.com/maps/place/BIORESONANZ+am+See+e.U./"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline !text-sm"
+            >
+              Alle Google-Bewertungen ansehen
+            </a>
+          </div>
         </div>
       </section>
 
