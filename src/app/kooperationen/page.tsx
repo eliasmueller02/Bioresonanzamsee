@@ -3,40 +3,68 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Kooperationen | BIORESONANZ am See",
-  description: "Partner: JOY NATURALS, RINGANA, HOLOSAN©, Apotheke Jois, Remove-Toxins.",
+  description: "Unsere Partner: BASENbasics, RINGANA, BIOGENA, Kraftwunder, TZ-Gesundheit und mehr.",
 };
 
 const partners = [
   {
-    name: "JOY NATURALS",
-    category: "Nahrungsergänzung",
-    description: "Premium Nahrungsergänzungsmittel in Pulverform. Hochwertige Inhaltsstoffe, optimale Dosierungen - ohne Zusatzstoffe.",
-    promo: "Code BEWUSSTPFLANZLICH: 10% auf die erste Bestellung",
-    url: "https://www.bewusst-pflanzlich.online",
+    name: "BASENbasics",
+    category: "Gekeimte Lebensmittel",
+    description: "Gekeimte Hülsenfrüchte, Reis, Dinkel-Pasta, Kerne & Samen. Verbesserte Verdaulichkeit, höhere Nährstoffdichte und mehr Darmwohlbefinden.",
+    url: "https://www.basenbasics.at",
+  },
+  {
+    name: "ESSENZEN",
+    category: "Pflanzliche Präparate",
+    description: "Energetische Essenzen aus Gemmo- und Phytopräparaten, angereichert mit DMSO. Unterstützung für Leber, Stoffwechsel, Lymphfluss und Blase.",
+    url: "https://sumupstore.com",
+    note: "Erhältlich in der Praxis",
+  },
+  {
+    name: "SINNbalance TEE",
+    category: "Kräutertees",
+    description: "Zwei Teesorten: BASENTEE (ausgleichend) und AUSLEITUNG (sanft reinigende Kräuter). 40g im praktischen, wiederverwendbaren Glas.",
+    url: "https://www.basenbasics.at",
   },
   {
     name: "RINGANA",
-    category: "Frischekosmetik",
-    description: "Frische Kosmetik- und Wellnessprodukte mit max. 6 Monaten Haltbarkeit. Höchste Wirkstoffkonzentration bei minimalen Konservierungsstoffen.",
-    url: "https://ilse-mueller.ringana.com",
+    category: "Frischekosmetik & Supplements",
+    description: "Natürliche Nahrungsergänzung und vegane Kosmetik ohne bedenkliche Inhaltsstoffe. Frisch, hochwertig und trendsetzend.",
+    url: "https://ilsemueller.ringana.com",
+    note: "Geschenkgutscheine in der Praxis erhältlich",
   },
   {
-    name: "HOLOSAN©",
-    category: "Medizintechnik",
-    description: "In Österreich entwickelte und in Deutschland hergestellte Bioresonanz-Geräte der neuesten Generation.",
-    url: "https://www.holosan-bioresonanz.com",
+    name: "BIOGENA",
+    category: "Nahrungsergänzung",
+    description: "Gesundheits- und Wellnessprodukte, individuell auf persönliche Bedürfnisse abgestimmt.",
+    url: "https://www.biogena.com",
+    promo: "Code AD1345173: €25 Rabatt ab €75 Bestellwert",
   },
   {
-    name: "Apotheke Jois",
-    category: "Pharmazie",
-    description: "Individuell angefertigte pharmazeutische Produkte als ergänzende Unterstützung zur Bioresonanzbehandlung.",
-    url: "https://www.apothekejois.at",
+    name: "TZ-Gesundheit",
+    category: "Earthing-Produkte",
+    description: "Erdungsprodukte, die mit der natürlichen Erdenergie verbinden - für den Alltag und besseren Schlaf.",
+    url: "https://tz-gesundheit.de",
+    promo: "Code sinnbalance836: 5% Rabatt",
   },
   {
-    name: "Remove-Toxins",
-    category: "Entgiftung",
-    description: "Programm zur zellulären Entgiftung von Umweltschadstoffen und Schwermetallen.",
-    url: "https://www.remove-toxins.com",
+    name: "ALLERGIEN VET",
+    category: "Veterinär-Diagnostik",
+    description: "Allergie-Tests für zu Hause für Hunde, Katzen und Pferde. Bei Haut-, Verdauungs- und Entzündungsproblemen.",
+    url: "https://vetevo.de",
+  },
+  {
+    name: "Kraftwunder",
+    category: "EMS-Fitness",
+    description: "EMS-Anzüge für zu Hause. Muskelaktivierung mit minimalem Zeitaufwand durch Elektromuskelstimulation.",
+    url: "https://kraftwunder.de",
+    promo: "Code sinnbalance5: 5% Rabatt",
+  },
+  {
+    name: "Bücher von Ilse Müller",
+    category: "Publikationen",
+    description: "Veröffentlichte Bücher: Humorvolles, Affirmationen, Rezepte und Malbücher - erhältlich auf Amazon.",
+    url: "https://www.amazon.de",
   },
 ];
 
@@ -72,6 +100,9 @@ export default function KooperationenPage() {
                   </a>
                 </div>
                 <p className="text-sm text-dark/50 leading-relaxed">{p.description}</p>
+                {"note" in p && p.note && (
+                  <p className="mt-2 text-xs text-dark/35 italic">{p.note}</p>
+                )}
                 {"promo" in p && p.promo && (
                   <div className="mt-3 flex items-center gap-2 bg-sage-50 rounded-md px-3 py-2">
                     <Sparkles className="text-sage-400 shrink-0" size={13} />
