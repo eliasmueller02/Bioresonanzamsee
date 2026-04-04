@@ -14,11 +14,10 @@ const partners = [
     url: "https://www.basenbasics.at",
   },
   {
-    name: "ESSENZEN",
-    category: "Pflanzliche Präparate",
-    description: "Energetische Essenzen aus Gemmo- und Phytopräparaten, angereichert mit DMSO. Unterstützung für Leber, Stoffwechsel, Lymphfluss und Blase.",
-    url: "https://sumupstore.com",
-    note: "Erhältlich in der Praxis",
+    name: "ROOT Brands - Clean Slate",
+    category: "Nahrungsergänzung",
+    description: "Bioavailable Silica-Tropfen mit Zeolith, Spurenmineralen und Vitamin C. Unterstützt das natürliche Wohlbefinden auf zellulärer Ebene.",
+    url: "https://therootbrands.com",
   },
   {
     name: "SINNbalance TEE",
@@ -64,7 +63,7 @@ const partners = [
     name: "Bücher von Ilse Müller",
     category: "Publikationen",
     description: "Veröffentlichte Bücher: Humorvolles, Affirmationen, Rezepte und Malbücher - erhältlich auf Amazon.",
-    url: "https://www.amazon.de",
+    url: "https://www.amazon.de/s?k=ilse+m%C3%BCller&crid=3QSE0VZEVVG72&sprefix=ilse+m%C3%BCller%2Caps%2C159&ref=nb_sb_noss_1",
   },
 ];
 
