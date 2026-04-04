@@ -215,7 +215,7 @@ export default function Home() {
               ))}
             </div>
             <h2 className="text-3xl font-heading font-bold mb-2">
-              Das sagen meine Klienten
+              Das sagen meine Klient:innen
             </h2>
             <a
               href="https://www.google.com/maps/place/BIORESONANZ+am+See+e.U./"

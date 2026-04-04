@@ -19,7 +19,8 @@
       "Bash(sips -s format jpeg \"bioresonanzamseebilder/IMG_5048.heic\" --out public/images/praxis-detail.jpeg)",
       "Bash(git rm:*)",
       "WebFetch(domain:www.remove-toxins.com)",
-      "WebSearch"
+      "WebSearch",
+      "WebFetch(domain:www.google.com)"
     ]
   }
 }

@@ -86,7 +86,7 @@ export default function UeberMichPage() {
           <div className="space-y-4 text-dark/55 leading-relaxed text-[15px]">
             <p>
               Mein Weg begann 2018 mit der Ausbildung zur veganen
-              Ernährungstrainerin. Viele Klienten kämpften mit
+              Ernährungstrainerin. Viele Klient:innen kämpften mit
               Nahrungsmittelunverträglichkeiten - ein Problem, das allein
               durch Ernährungsberatung oft nicht gelöst werden konnte.
             </p>
