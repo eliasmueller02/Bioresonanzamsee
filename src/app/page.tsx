@@ -203,6 +203,68 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Bewertungen */}
+      <section className="section-padding">
+        <div className="container-max max-w-4xl">
+          <div className="text-center mb-10">
+            <div className="flex items-center justify-center gap-1 mb-2">
+              {[...Array(5)].map((_, i) => (
+                <svg key={i} className="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              ))}
+            </div>
+            <h2 className="text-3xl font-heading font-bold mb-2">
+              Das sagen meine Klienten
+            </h2>
+            <a
+              href="https://www.google.com/maps/place/BIORESONANZ+am+See+e.U./"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-dark/40 hover:text-sage-400 transition-colors"
+            >
+              5,0 Sterne auf Google
+            </a>
+          </div>
+          <div className="grid md:grid-cols-3 gap-5">
+            {[
+              {
+                name: "Ilse F.",
+                text: "Deine Behandlungen haben mir sehr gut geholfen und auch die Ernährungsumstellung hat sich auf meinen Körper positiv ausgewirkt. Die Basic-Produkte von deiner Praxis sind schnell zubereitet und schmecken auch super gut. Ich empfehle dich zu 100% weiter.",
+                time: "vor 11 Monaten",
+              },
+              {
+                name: "Martina G.",
+                text: "Ich bin zu Ilse gekommen, weil mir permanent schlecht und übel war. Durch Austestungen und sämtliche Therapien geht es meinem Magen mittlerweile hervorragend!! Zusätzlich habe ich Unterstützung für die Vorbereitung auf einen Laufbewerb in Anspruch genommen - den Bewerb konnte ich mit meiner persönlichen Bestmarke finishen!",
+                time: "vor 2 Jahren",
+              },
+              {
+                name: "Theresa W.",
+                text: "Ilse Müller hat uns sehr sehr geholfen die Unverträglichkeiten unseres Sohnes in den Griff zu bekommen! Vor allem das Austesten über die Haare war für mich einfach der Wahnsinn! Das bedeutete überhaupt keine Schmerzen für meinen Sohn! Ich kann Ilse wirklich sehr weiterempfehlen!",
+                time: "vor 2 Jahren",
+              },
+            ].map((r) => (
+              <div key={r.name} className="card">
+                <div className="flex items-center gap-1 mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-3.5 h-3.5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-sm text-dark/55 leading-relaxed mb-4">
+                  &ldquo;{r.text}&rdquo;
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm font-medium text-dark">{r.name}</span>
+                  <span className="text-xs text-dark/30">{r.time}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Gut zu wissen */}
       <section className="section-padding">
         <div className="container-max max-w-3xl">
