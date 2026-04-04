@@ -52,7 +52,7 @@ export default function Home() {
         <div className="container-max py-24 px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-sage-600 font-medium text-sm tracking-wide mb-4">
+              <p className="text-sage-400 font-medium text-sm tracking-wide mb-4">
                 HOLOSAN© Bioresonanzmethode
               </p>
               <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-bold text-dark leading-[1.15] mb-6">
@@ -60,7 +60,7 @@ export default function Home() {
                 <br />
                 Ihre Balance.
                 <br />
-                <span className="text-sage-600">Ihr Wohlbefinden.</span>
+                <span className="text-sage-400">Ihr Wohlbefinden.</span>
               </h1>
               <p className="text-dark/50 text-lg max-w-lg mb-10 leading-relaxed">
                 Sanfte, schmerzfreie Bioresonanzmethode bei energetischen
@@ -110,7 +110,7 @@ export default function Home() {
             ].map((item) => (
               <div key={item.label} className="card text-center py-8">
                 <div className="w-10 h-10 rounded-lg bg-sage-100 flex items-center justify-center mx-auto mb-3">
-                  <Check className="text-sage-600" size={18} />
+                  <Check className="text-sage-400" size={18} />
                 </div>
                 <h3 className="font-heading font-semibold text-sm mb-1">{item.label}</h3>
                 <p className="text-dark/40 text-sm">{item.sub}</p>
@@ -132,7 +132,7 @@ export default function Home() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {treatments.map((t) => (
               <div key={t.title} className="card-hover">
-                <t.icon className="text-sage-500 mb-3" size={20} />
+                <t.icon className="text-sage-400 mb-3" size={20} />
                 <h3 className="font-heading font-semibold text-sm mb-1">{t.title}</h3>
                 <p className="text-dark/40 text-sm leading-relaxed">{t.desc}</p>
               </div>
@@ -191,7 +191,7 @@ export default function Home() {
             {steps.map((step) => (
               <div key={step.num} className="flex gap-6 items-start">
                 <div className="w-10 h-10 rounded-lg bg-sage-100 flex items-center justify-center shrink-0">
-                  <span className="font-heading font-bold text-sage-700 text-sm">{step.num}</span>
+                  <span className="font-heading font-bold text-sage-400 text-sm">{step.num}</span>
                 </div>
                 <div>
                   <h3 className="font-heading font-semibold mb-1">{step.title}</h3>
@@ -219,7 +219,7 @@ export default function Home() {
               "Ersetzt nicht den Arztbesuch",
             ].map((item) => (
               <div key={item} className="flex items-center gap-3 bg-sand-50 rounded-lg px-4 py-3 border border-sand-200">
-                <Check className="text-sage-500 shrink-0" size={16} />
+                <Check className="text-sage-400 shrink-0" size={16} />
                 <span className="text-sm text-dark/60">{item}</span>
               </div>
             ))}
@@ -237,7 +237,7 @@ export default function Home() {
             Vereinbaren Sie Ihren Termin und starten Sie Ihren Weg zu mehr Wohlbefinden.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className="btn-primary !bg-sage-500 hover:!bg-sage-400">
+            <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className="btn-primary !bg-sage-400 hover:!bg-sage-300">
               Termin buchen <ArrowRight className="inline ml-2" size={16} />
             </a>
             <a href="mailto:praxis@bioresonanzamsee.at" className="btn-outline !border-white/20 !text-white/70 hover:!text-white hover:!bg-white/5">

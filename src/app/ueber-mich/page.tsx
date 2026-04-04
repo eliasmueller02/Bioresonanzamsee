@@ -46,7 +46,7 @@ export default function UeberMichPage() {
             </div>
             <div className="md:col-span-3">
               <h1 className="text-4xl font-heading font-bold mb-2">Ilse Müller</h1>
-              <p className="text-sage-600 font-medium text-sm mb-4">
+              <p className="text-sage-400 font-medium text-sm mb-4">
                 HOLOSAN© Bioresonanz-Praktikerin
               </p>
               <p className="text-dark/50 leading-relaxed">
@@ -121,8 +121,8 @@ export default function UeberMichPage() {
             {certifications.map((c) => (
               <div key={c.title + c.year} className="card flex items-center gap-4 !py-4">
                 <div className="w-12 h-12 rounded-lg bg-sage-100 flex flex-col items-center justify-center shrink-0">
-                  <GraduationCap className="text-sage-600" size={16} />
-                  <span className="text-[10px] font-bold text-sage-700 mt-0.5">{c.year}</span>
+                  <GraduationCap className="text-sage-400" size={16} />
+                  <span className="text-[10px] font-bold text-sage-600 mt-0.5">{c.year}</span>
                 </div>
                 <div>
                   <h3 className="font-heading font-semibold text-sm">{c.title}</h3>
@@ -142,7 +142,7 @@ export default function UeberMichPage() {
           <div className="grid sm:grid-cols-2 gap-2">
             {modules.map((m) => (
               <div key={m} className="flex items-center gap-3 rounded-lg px-4 py-3 bg-sage-50">
-                <Award className="text-sage-500 shrink-0" size={14} />
+                <Award className="text-sage-400 shrink-0" size={14} />
                 <span className="text-sm text-dark/60">{m}</span>
               </div>
             ))}

@@ -36,7 +36,7 @@ export default function ImpressumPage() {
               E-Mail:{" "}
               <a
                 href="mailto:praxis@bioresonanzamsee.at"
-                className="text-sage-600 hover:underline"
+                className="text-sage-400 hover:underline"
               >
                 praxis@bioresonanzamsee.at
               </a>
@@ -44,7 +44,7 @@ export default function ImpressumPage() {
               Website:{" "}
               <a
                 href="https://bioresonanzamsee.at"
-                className="text-sage-600 hover:underline"
+                className="text-sage-400 hover:underline"
               >
                 bioresonanzamsee.at
               </a>

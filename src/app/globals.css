@@ -24,8 +24,8 @@
     @apply max-w-5xl mx-auto;
   }
   .btn-primary {
-    @apply inline-block bg-sage-600 text-white font-heading font-medium px-7 py-3 rounded-lg
-           hover:bg-sage-700 transition-all duration-200;
+    @apply inline-block bg-sage-500 text-white font-heading font-medium px-7 py-3 rounded-lg
+           hover:bg-sage-600 transition-all duration-200;
   }
   .btn-outline {
     @apply inline-block border border-sage-300 text-dark font-heading font-medium px-7 py-3 rounded-lg

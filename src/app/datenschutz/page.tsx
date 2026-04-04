@@ -22,7 +22,7 @@ export default function DatenschutzPage() {
               Ilse Müller<br />
               Bahnstraße 22, 7093 Jois, Österreich<br />
               E-Mail:{" "}
-              <a href="mailto:praxis@bioresonanzamsee.at" className="text-sage-600 hover:underline">
+              <a href="mailto:praxis@bioresonanzamsee.at" className="text-sage-400 hover:underline">
                 praxis@bioresonanzamsee.at
               </a>
             </p>

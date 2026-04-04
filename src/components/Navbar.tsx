@@ -29,7 +29,7 @@ export default function Navbar() {
             className="rounded-full"
           />
           <span className="font-heading font-semibold text-dark tracking-tight text-sm">
-            BIORESONANZ <span className="text-sage-600 font-normal">am See</span>
+            BIORESONANZ <span className="text-sage-400 font-normal">am See</span>
           </span>
         </Link>
 

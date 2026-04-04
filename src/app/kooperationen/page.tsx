@@ -60,13 +60,13 @@ export default function KooperationenPage() {
                 <div className="flex items-start justify-between gap-4 mb-2">
                   <div>
                     <h3 className="font-heading font-semibold">{p.name}</h3>
-                    <span className="text-[11px] font-medium text-sage-600">{p.category}</span>
+                    <span className="text-[11px] font-medium text-sage-400">{p.category}</span>
                   </div>
                   <a
                     href={p.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-xs text-dark/30 hover:text-sage-600 transition-colors shrink-0"
+                    className="flex items-center gap-1 text-xs text-dark/30 hover:text-sage-400 transition-colors shrink-0"
                   >
                     Website <ExternalLink size={11} />
                   </a>
@@ -74,8 +74,8 @@ export default function KooperationenPage() {
                 <p className="text-sm text-dark/50 leading-relaxed">{p.description}</p>
                 {"promo" in p && p.promo && (
                   <div className="mt-3 flex items-center gap-2 bg-sage-50 rounded-md px-3 py-2">
-                    <Sparkles className="text-sage-500 shrink-0" size={13} />
-                    <span className="text-xs text-sage-700">{p.promo}</span>
+                    <Sparkles className="text-sage-400 shrink-0" size={13} />
+                    <span className="text-xs text-sage-600">{p.promo}</span>
                   </div>
                 )}
               </div>

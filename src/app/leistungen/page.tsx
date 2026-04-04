@@ -104,13 +104,13 @@ export default function LeistungenPage() {
                 className={`card relative ${s.highlight ? "ring-1 ring-sage-400" : ""}`}
               >
                 {s.highlight && (
-                  <span className="absolute -top-2.5 left-5 bg-sage-600 text-white text-[11px] font-medium px-2.5 py-0.5 rounded-md">
+                  <span className="absolute -top-2.5 left-5 bg-sage-500 text-white text-[11px] font-medium px-2.5 py-0.5 rounded-md">
                     Empfohlen
                   </span>
                 )}
                 <h3 className="font-heading font-semibold mb-2">{s.title}</h3>
                 <div className="flex items-baseline gap-1 mb-1">
-                  <span className="text-2xl font-heading font-bold text-sage-700">
+                  <span className="text-2xl font-heading font-bold text-sage-500">
                     &euro;{s.price}
                   </span>
                 </div>
@@ -121,7 +121,7 @@ export default function LeistungenPage() {
                 <ul className="space-y-2 mb-6">
                   {s.features.map((f) => (
                     <li key={f} className="flex items-start gap-2 text-sm text-dark/60">
-                      <Check className="text-sage-500 shrink-0 mt-0.5" size={14} />
+                      <Check className="text-sage-400 shrink-0 mt-0.5" size={14} />
                       {f}
                     </li>
                   ))}
@@ -132,7 +132,7 @@ export default function LeistungenPage() {
                   rel="noopener noreferrer"
                   className={`block text-center w-full py-2 rounded-lg text-sm font-medium transition-colors ${
                     s.highlight
-                      ? "bg-sage-600 text-white hover:bg-sage-700"
+                      ? "bg-sage-500 text-white hover:bg-sage-600"
                       : "bg-sand-100 text-dark/60 hover:bg-sage-100"
                   }`}
                 >

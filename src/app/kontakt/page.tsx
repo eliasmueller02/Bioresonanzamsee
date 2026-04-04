@@ -25,7 +25,7 @@ export default function KontaktPage() {
               <div className="card">
                 <h3 className="font-heading font-semibold text-sm mb-3">Adresse</h3>
                 <div className="flex items-start gap-2.5 text-sm text-dark/55">
-                  <MapPin className="text-sage-500 shrink-0 mt-0.5" size={16} />
+                  <MapPin className="text-sage-400 shrink-0 mt-0.5" size={16} />
                   <div>
                     <p className="font-medium text-dark">BIORESONANZ am See e.U.</p>
                     <p>Bahnstraße 22<br />7093 Jois, Österreich</p>
@@ -36,10 +36,10 @@ export default function KontaktPage() {
               <div className="card">
                 <h3 className="font-heading font-semibold text-sm mb-3">E-Mail</h3>
                 <div className="flex items-center gap-2.5">
-                  <Mail className="text-sage-500 shrink-0" size={16} />
+                  <Mail className="text-sage-400 shrink-0" size={16} />
                   <a
                     href="mailto:praxis@bioresonanzamsee.at"
-                    className="text-sm text-sage-600 hover:text-sage-700"
+                    className="text-sm text-sage-500 hover:text-sage-600"
                   >
                     praxis@bioresonanzamsee.at
                   </a>
@@ -53,7 +53,7 @@ export default function KontaktPage() {
                     href="https://www.facebook.com/bioresonanzamsee"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between text-sm text-dark/50 hover:text-sage-600 transition-colors"
+                    className="flex items-center justify-between text-sm text-dark/50 hover:text-sage-400 transition-colors"
                   >
                     Facebook <ExternalLink size={12} />
                   </a>
@@ -61,7 +61,7 @@ export default function KontaktPage() {
                     href="https://www.instagram.com/bioresonanz_am_see/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between text-sm text-dark/50 hover:text-sage-600 transition-colors"
+                    className="flex items-center justify-between text-sm text-dark/50 hover:text-sage-400 transition-colors"
                   >
                     Instagram <ExternalLink size={12} />
                   </a>
