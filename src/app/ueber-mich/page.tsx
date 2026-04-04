@@ -36,7 +36,7 @@ export default function UeberMichPage() {
           <div className="grid md:grid-cols-5 gap-10 items-center">
             <div className="md:col-span-2">
               <Image
-                src="/images/praxis-detail.jpeg"
+                src="/images/ilse-portrait.jpeg"
                 alt="Ilse Müller"
                 width={400}
                 height={480}
