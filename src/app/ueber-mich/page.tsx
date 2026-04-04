@@ -3,7 +3,7 @@ import { GraduationCap, Award } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Über Mich | Ilse Müller | BIORESONANZ am See",
+  title: "Über Mich | Ilse Müller",
   description: "Ilse Müller - HOLOSAN© Bioresonanz-Praktikerin und vegane Ernährungstrainerin in Jois.",
 };
 

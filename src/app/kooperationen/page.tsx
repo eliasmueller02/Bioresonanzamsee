@@ -2,7 +2,7 @@ import { ExternalLink, Sparkles } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Kooperationen | BIORESONANZ am See",
+  title: "Kooperationen",
   description: "Unsere Partner: BASENbasics, RINGANA, BIOGENA, Kraftwunder, TZ-Gesundheit und mehr.",
 };
 
@@ -23,7 +23,7 @@ const partners = [
     name: "SINNbalance TEE",
     category: "Kräutertees",
     description: "Zwei Teesorten: BASENTEE (ausgleichend) und AUSLEITUNG (sanft reinigende Kräuter). 40g im praktischen, wiederverwendbaren Glas.",
-    url: "https://www.basenbasics.at",
+    url: "https://basenbasics.at/zum-trinken/?e-filter-e1639b6-product_tag=tee",
   },
   {
     name: "RINGANA",

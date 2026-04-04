@@ -2,7 +2,7 @@ import { Mail, MapPin, ExternalLink } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Kontakt | BIORESONANZ am See",
+  title: "Kontakt",
   description: "Kontaktieren Sie BIORESONANZ am See. Bahnstraße 22, 7093 Jois.",
 };
 

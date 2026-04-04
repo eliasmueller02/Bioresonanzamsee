@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Datenschutz | BIORESONANZ am See",
+  title: "Datenschutz",
+  description: "Datenschutzerklärung der BIORESONANZ am See e.U. in Jois. Informationen zur Datenverarbeitung und Ihren Rechten.",
 };
 
 export default function DatenschutzPage() {

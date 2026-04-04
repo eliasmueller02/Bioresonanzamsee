@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Impressum | BIORESONANZ am See",
+  title: "Impressum",
+  description: "Impressum der BIORESONANZ am See e.U. Ilse Müller, Bahnstraße 22, 7093 Jois, Österreich.",
 };
 
 export default function ImpressumPage() {
@@ -25,6 +26,11 @@ export default function ImpressumPage() {
               7093 Jois
               <br />
               Österreich
+            </p>
+            <p className="mt-2">
+              FN 617244m Handelsgericht Eisenstadt
+              <br />
+              UID: ATU80582601
             </p>
           </div>
 

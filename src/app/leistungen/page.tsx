@@ -3,7 +3,7 @@ import { Clock, Check, CreditCard } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Preise & Leistungen | BIORESONANZ am See",
+  title: "Preise & Leistungen",
   description: "Ersttermin, Folgetermin, Kaltrotlicht, Kälteanwendung, HRV-Messung und HOLOSAN-VET.",
 };
 

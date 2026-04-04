@@ -2,7 +2,7 @@ import { ChevronRight } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Info-Ecke | BIORESONANZ am See",
+  title: "Info-Ecke",
   description: "Wissenswertes: Basische Ernährung, Thymusdrüse, Gluten, Entgiftung, Darmgesundheit und mehr.",
 };
 
@@ -81,9 +81,32 @@ const topics = [
   },
 ];
 
+function FaqJsonLd() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: topics.map((t) => ({
+      "@type": "Question",
+      name: t.title,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: `${t.summary} ${t.details.join(". ")}`,
+      },
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+    />
+  );
+}
+
 export default function InfoEckePage() {
   return (
     <>
+      <FaqJsonLd />
       <section className="section-padding pt-32 section-bg">
         <div className="container-max text-center">
           <h1 className="text-4xl font-heading font-bold mb-3">Info-Ecke</h1>
