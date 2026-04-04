@@ -93,22 +93,6 @@ export default function UeberMichPage() {
             </p>
           </div>
 
-          <div className="mt-10 grid sm:grid-cols-2 gap-4">
-            <Image
-              src="/images/ilse-mueller.png"
-              alt="Ilse Müller vor der Praxis"
-              width={400}
-              height={400}
-              className="rounded-xl w-full object-cover"
-            />
-            <Image
-              src="/images/zertifikat-holosan-sport.png"
-              alt="HOLOSAN Sport Zertifikat"
-              width={400}
-              height={400}
-              className="rounded-xl w-full object-cover"
-            />
-          </div>
         </div>
       </section>
 
