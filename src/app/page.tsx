@@ -264,7 +264,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-8">
             <a
-              href="https://www.google.com/maps/place/BIORESONANZ+am+See+e.U./"
+              href="https://www.google.com/search?sca_esv=f72dd7b5cfdb5d01&sxsrf=ANbL-n5XSzTaj2VZdHbPv3uQgH43VLZqWg:1775332728408&q=bioresonanz+am+see&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOapF39j-ODUOMYKcAW9zhkhLSgo9eH8aT6f7btzji995CGqwVZMlPTkETkI44N5sB7vOvF8%3D&uds=ALYpb_myr09fc72P8O-r9QptxpsdO9nru6VGodL9zF7Te_8kQmPu4sHhSSOFqI9nlfJ_kzvEl8GyHKzaszcdDxqlLyohgy-Houj9vbZ7TfuDQzrAiBZIbfU&sa=X&ved=2ahUKEwit64nl_dSTAxXDh_0HHROHIfUQ3PALegQIGxAE&biw=899&bih=931&dpr=2"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline !text-sm"

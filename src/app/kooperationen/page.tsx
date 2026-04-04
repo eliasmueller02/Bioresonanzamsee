@@ -22,7 +22,7 @@ const partners = [
   {
     name: "SINNbalance TEE",
     category: "Kräutertees",
-    description: "Drei Teesorten: BASENTEE (ausgleichend) und AUSLEITUNG (sanft reinigende Kräuter). 40g im praktischen, wiederverwendbaren Glas.",
+    description: "Drei Teesorten: BASENTEE (ausgleichend), SOMMER (stoffwechselanregend) und AUSLEITUNG (sanft reinigende Kräuter). 40g im praktischen, wiederverwendbaren Glas.",
     url: "https://basenbasics.at/zum-trinken/?e-filter-e1639b6-product_tag=tee",
   },
   {
@@ -50,7 +50,7 @@ const partners = [
     name: "ALLERGIEN VET",
     category: "Veterinär-Diagnostik",
     description: "Allergie-Tests für zu Hause für Hunde, Katzen und Pferde. Bei Haut-, Verdauungs- und Entzündungsproblemen.",
-    url: "https://vetevo.de",
+    url: "https://vetevo.de/?sca_ref=9915834.WPal1P89ZUDZpFm&utm_source=affiliate-ilse-m%C3%BCller-9915834&utm_medium=affiliate&utm_campaign=231981&utm_term=Offline-Partner-(Flyer+Code)",
   },
   {
     name: "Kraftwunder",
