@@ -106,7 +106,7 @@ export default function Home() {
             {[
               { label: "Schmerzfrei", sub: "Sanfte Anwendung" },
               { label: "Bis 3m Distanz", sub: "Keine Nahkörperarbeit" },
-              { label: "Verordnungsfähig", sub: "Krankenkassen-relevant" },
+              { label: "Verordnungsfähig", sub: "Relevant für Privatversicherung" },
             ].map((item) => (
               <div key={item.label} className="card text-center py-8">
                 <div className="w-10 h-10 rounded-lg bg-sage-100 flex items-center justify-center mx-auto mb-3">
@@ -213,7 +213,7 @@ export default function Home() {
             {[
               "Ärztlich verordnungsfähig",
               "Funktioniert bis 3 Meter Distanz",
-              "Einige Krankenkassen übernehmen Kosten",
+              "Relevant für Privatversicherungen",
               "Steuerlich absetzbar (Arbeitnehmerveranlagung)",
               "Anerkannte energetische Methode",
               "Ersetzt nicht den Arztbesuch",
