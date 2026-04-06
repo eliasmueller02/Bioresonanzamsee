@@ -119,7 +119,7 @@ export default function LeistungenPage() {
             {services.map((s) => (
               <div
                 key={s.title}
-                className={`card relative ${s.highlight ? "ring-1 ring-sage-400" : ""}`}
+                className={`card relative flex flex-col ${s.highlight ? "ring-1 ring-sage-400" : ""}`}
               >
                 {"image" in s && s.image && (
                   <Image
@@ -150,7 +150,7 @@ export default function LeistungenPage() {
                   <Clock size={12} />
                   {s.duration}
                 </p>
-                <ul className="space-y-2 mb-6">
+                <ul className="space-y-2 mb-6 flex-1">
                   {s.features.map((f) => (
                     <li key={f} className="flex items-start gap-2 text-sm text-dark/60">
                       <Check className="text-sage-400 shrink-0 mt-0.5" size={14} />
