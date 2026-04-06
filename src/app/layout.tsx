@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
+import StickyMobileCTA from "@/components/StickyMobileCTA";
 
 const BASE_URL = "https://www.bioresonanzamsee.at";
 
@@ -111,6 +112,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <StickyMobileCTA />
         <CookieBanner />
       </body>
     </html>
