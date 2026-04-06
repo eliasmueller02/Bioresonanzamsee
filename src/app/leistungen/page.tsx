@@ -82,8 +82,8 @@ const services = [
   },
   {
     title: "Pressotherapie",
-    price: "35",
-    duration: "ca. 30 Minuten",
+    price: "45",
+    duration: "ca. 1 Stunde",
     features: [
       "Lymphdrainage durch Druckwellenmassage",
       "Fördert Durchblutung und Stoffwechsel",
