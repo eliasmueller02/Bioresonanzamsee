@@ -24,7 +24,9 @@
       "Bash(sips -s format jpeg \"/Users/eliasmuller/Library/Messages/Attachments/00/00/6F45E790-A214-4722-8DAF-92B630B396EE/IMG_9004.heic\" --out public/images/pressotherapie-1.jpeg)",
       "Bash(sips -s format jpeg \"/Users/eliasmuller/Library/Messages/Attachments/43/03/4F1D47A6-9B92-4E47-BA00-8BE57F007F87/IMG_8607.heic\" --out public/images/pressotherapie-2.jpeg)",
       "Bash(cp \"/Users/eliasmuller/Library/Messages/Attachments/00/00/6F45E790-A214-4722-8DAF-92B630B396EE/IMG_9004.heic\" bioresonanzamseebilder/)",
-      "Bash(cp \"/Users/eliasmuller/Library/Messages/Attachments/43/03/4F1D47A6-9B92-4E47-BA00-8BE57F007F87/IMG_8607.heic\" bioresonanzamseebilder/)"
+      "Bash(cp \"/Users/eliasmuller/Library/Messages/Attachments/43/03/4F1D47A6-9B92-4E47-BA00-8BE57F007F87/IMG_8607.heic\" bioresonanzamseebilder/)",
+      "Bash(sips -s format jpeg \"bioresonanzamseebilder/IMG_9004.heic\" --out public/images/pressotherapie-1.jpeg)",
+      "Bash(sips -s format jpeg \"bioresonanzamseebilder/IMG_8607.heic\" --out public/images/pressotherapie-2.jpeg)"
     ]
   }
 }

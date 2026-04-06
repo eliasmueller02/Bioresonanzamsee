@@ -84,6 +84,7 @@ const services = [
     title: "Pressotherapie",
     price: "35",
     duration: "ca. 30 Minuten",
+    image: "/images/pressotherapie-1.jpeg",
     features: [
       "Lymphdrainage durch Druckwellenmassage",
       "Fördert Durchblutung und Stoffwechsel",
@@ -121,6 +122,15 @@ export default function LeistungenPage() {
                 key={s.title}
                 className={`card relative ${s.highlight ? "ring-1 ring-sage-400" : ""}`}
               >
+                {"image" in s && s.image && (
+                  <Image
+                    src={s.image}
+                    alt={s.title}
+                    width={400}
+                    height={200}
+                    className="rounded-lg mb-4 w-full object-cover h-40"
+                  />
+                )}
                 {s.highlight && (
                   <span className="absolute -top-2.5 left-5 bg-sage-500 text-white text-[11px] font-medium px-2.5 py-0.5 rounded-md">
                     Empfohlen

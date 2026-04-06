@@ -75,6 +75,12 @@ export default function UeberMichPage() {
                   width={56}
                   height={56}
                 />
+                <Image
+                  src="/images/wko-siegel.png"
+                  alt="WKO Qualitätsmanagement - Berufliche Sorgfalt"
+                  width={56}
+                  height={56}
+                />
               </div>
             </div>
           </div>
