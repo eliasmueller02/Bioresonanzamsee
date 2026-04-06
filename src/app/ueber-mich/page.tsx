@@ -17,6 +17,7 @@ const certifications = [
   { year: "2023", title: "Vitalnährstoff-Therapie", detail: "Seminar" },
   { year: "2024", title: "Mentalfeld-Technik Level I", detail: "Dr. Dietrich Klinghardt" },
   { year: "2025", title: "Darmgesundheit & Nahrungsmittelunverträglichkeit", detail: "Spezialisierung" },
+  { year: "2025", title: "HOLOSAN© VET (Hund)", detail: "Spezialisierung" },
 ];
 
 const modules = [

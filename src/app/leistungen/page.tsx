@@ -42,7 +42,7 @@ const services = [
     ],
   },
   {
-    title: "Kälteanwendung",
+    title: "Kälteanwendung über die Handflächen",
     price: "35",
     duration: "ca. 15 Minuten",
     features: [
@@ -78,6 +78,16 @@ const services = [
     duration: "nach Vereinbarung",
     features: [
       "Nachbesprechung der Laborauswertung",
+    ],
+  },
+  {
+    title: "Pressotherapie",
+    price: "35",
+    duration: "ca. 30 Minuten",
+    features: [
+      "Lymphdrainage durch Druckwellenmassage",
+      "Fördert Durchblutung und Stoffwechsel",
+      "Unterstützt Regeneration und Wohlbefinden",
     ],
   },
 ];
@@ -154,6 +164,25 @@ export default function LeistungenPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section-padding !py-16">
+        <div className="container-max max-w-2xl text-center">
+          <h2 className="text-xl font-heading font-bold mb-3">
+            Gutscheine verschenken
+          </h2>
+          <p className="text-dark/50 text-sm mb-5">
+            Das perfekte Geschenk für mehr Wohlbefinden. Gutscheine sind in der Praxis erhältlich.
+          </p>
+          <a
+            href="https://myhellocash.com/widget/bioresonanz-am-see-e-u-121619"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-outline !text-sm"
+          >
+            Gutschein anfragen
+          </a>
         </div>
       </section>
 
