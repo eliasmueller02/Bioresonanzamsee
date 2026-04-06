@@ -244,7 +244,7 @@ export default function Home() {
                 time: "vor 2 Jahren",
               },
             ].map((r) => (
-              <div key={r.name} className="card">
+              <div key={r.name} className="card flex flex-col">
                 <div className="flex items-center gap-1 mb-3">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-3.5 h-3.5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
@@ -252,7 +252,7 @@ export default function Home() {
                     </svg>
                   ))}
                 </div>
-                <p className="text-sm text-dark/55 leading-relaxed mb-4">
+                <p className="text-sm text-dark/55 leading-relaxed mb-4 flex-1">
                   &ldquo;{r.text}&rdquo;
                 </p>
                 <div className="flex items-center justify-between">
