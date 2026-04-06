@@ -13,6 +13,7 @@ import {
   Check,
 } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
+import NewsletterForm from "@/components/NewsletterForm";
 
 const CTA_URL = "https://myhellocash.com/widget/bioresonanz-am-see-e-u-121619";
 
@@ -338,6 +339,21 @@ export default function Home() {
               </ScrollReveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Newsletter */}
+      <section className="section-padding">
+        <div className="container-max max-w-2xl text-center">
+          <ScrollReveal>
+            <h2 className="text-2xl font-heading font-bold mb-2">
+              Newsletter
+            </h2>
+            <p className="text-dark/50 text-sm mb-6">
+              Bleib informiert über Neuigkeiten, Tipps und Angebote rund um Bioresonanz und Wohlbefinden.
+            </p>
+            <NewsletterForm />
+          </ScrollReveal>
         </div>
       </section>
 
