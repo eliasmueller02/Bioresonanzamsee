@@ -185,12 +185,12 @@ export default function LeistungenPage() {
             Das perfekte Geschenk für mehr Wohlbefinden. Gutscheine sind in der Praxis erhältlich.
           </p>
           <a
-            href="https://myhellocash.com/widget/bioresonanz-am-see-e-u-121619"
+            href="https://giftcards.sumup.com/order/M3HSYHRU"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline !text-sm"
           >
-            Gutschein anfragen
+            Gutschein kaufen
           </a>
         </div>
       </section>
