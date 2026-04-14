@@ -81,6 +81,16 @@ const services = [
     ],
   },
   {
+    title: "Vegane Ernährungsbegleitung",
+    price: "95",
+    duration: "pro Stunde",
+    features: [
+      "Individuelle Ernährungsberatung",
+      "Pflanzenbasierte Ernährungsumstellung",
+      "Unterstützung bei Unverträglichkeiten",
+    ],
+  },
+  {
     title: "Pressotherapie",
     price: "45",
     duration: "ca. 1 Stunde",
