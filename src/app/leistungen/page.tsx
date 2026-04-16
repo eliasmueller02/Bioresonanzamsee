@@ -85,7 +85,6 @@ const services = [
     price: "95",
     duration: "pro Stunde",
     features: [
-      "Individuelle Ernährungsberatung",
       "Pflanzenbasierte Ernährungsumstellung",
       "Unterstützung bei Unverträglichkeiten",
     ],
