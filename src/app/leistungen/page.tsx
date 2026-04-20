@@ -62,7 +62,7 @@ const services = [
     ],
   },
   {
-    title: "Körperfeldmessung und Nährstoffberatung",
+    title: "Körperfeldmessung und Nährstoffbegleitung",
     price: "79",
     pricePrefix: "ab",
     duration: "nach Vereinbarung",
