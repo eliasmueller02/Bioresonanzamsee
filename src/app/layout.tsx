@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "Wohlbefinden",
     "Ilse Müller",
     "Bioresonanz Burgenland",
-    "Frequenztherapie",
+    "Frequenzanwendung",
     "HRV Messung",
   ],
   icons: {

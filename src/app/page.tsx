@@ -206,7 +206,7 @@ export default function Home() {
         <div className="container-max max-w-3xl">
           <ScrollReveal>
             <h2 className="text-3xl font-heading font-bold mb-3 text-center">
-              Ablauf der Behandlung
+              Ablauf der Anwendung
             </h2>
             <p className="text-dark/50 text-center mb-12">
               In drei Schritten zu deinem Wohlbefinden.
@@ -268,7 +268,7 @@ export default function Home() {
               },
               {
                 name: "Martina G.",
-                text: "Ich bin zu Ilse gekommen, weil mir permanent schlecht und übel war. Durch Austestungen und sämtliche Therapien geht es meinem Magen mittlerweile hervorragend!! Zusätzlich habe ich Unterstützung für die Vorbereitung auf einen Laufbewerb in Anspruch genommen - den Bewerb konnte ich mit meiner persönlichen Bestmarke finishen!",
+                text: "Ich habe Unterstützung für die Vorbereitung auf einen Laufbewerb in Anspruch genommen - den Bewerb konnte ich mit meiner persönlichen Bestmarke finishen!",
                 time: "vor 2 Jahren",
               },
               {

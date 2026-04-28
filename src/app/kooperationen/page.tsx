@@ -47,9 +47,9 @@ const partners = [
     promo: "Code sinnbalance836: 5% Rabatt",
   },
   {
-    name: "ALLERGIEN VET",
-    category: "Veterinär-Diagnostik",
-    description: "Allergie-Tests für zu Hause für Hunde, Katzen und Pferde. Bei Haut-, Verdauungs- und Entzündungsproblemen.",
+    name: "vetevo Tier-Tests",
+    category: "Veterinär-Tests",
+    description: "Tests für zu Hause für Hunde, Katzen und Pferde rund um Verträglichkeiten und Wohlbefinden.",
     url: "https://vetevo.de/?sca_ref=9915834.WPal1P89ZUDZpFm&utm_source=affiliate-ilse-m%C3%BCller-9915834&utm_medium=affiliate&utm_campaign=231981&utm_term=Offline-Partner-(Flyer+Code)",
   },
   {

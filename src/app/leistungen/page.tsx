@@ -47,7 +47,7 @@ const services = [
     duration: "ca. 15 Minuten",
     features: [
       "Core Cooling Technologie",
-      "Kältetherapie mit Vakuumdruck",
+      "Kälteanwendung mit Vakuumdruck",
       "Stimuliert Durchblutung",
     ],
   },

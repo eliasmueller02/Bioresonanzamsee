@@ -29,14 +29,14 @@ const topics = [
     title: "Gluten & Unverträglichkeiten",
     summary: "Gluten ist ein Protein in Weizen, Roggen und Gerste. Manche Menschen berichten von einem besseren Wohlbefinden bei einer glutenarmen Ernährung.",
     details: [
-      "Symptome reichen von Verdauungsproblemen bis zu neurologischen Auswirkungen",
+      "Die individuelle Verträglichkeit kann sehr unterschiedlich sein",
       "Glutenfreie Ernährung kann bei bestätigter Unverträglichkeit helfen",
       "Bioresonanz unterstützt bei der Identifizierung energetischer Dysbalancen",
     ],
   },
   {
     title: "Schwermetalle & Umweltgifte",
-    summary: "Umweltschadstoffe verursachen diffuse Symptome und Stoffwechselblockaden.",
+    summary: "Umweltschadstoffe können das energetische Gleichgewicht und den Stoffwechsel belasten.",
     details: [
       "Entgiftung über Leber, Niere, Lunge, Haut und Lymphsystem",
       "Die Leber wandelt Toxine in wasserlösliche Verbindungen um",
