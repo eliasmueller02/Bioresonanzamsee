@@ -24,8 +24,8 @@ const treatments = [
   { icon: Zap, title: "Konzentration", desc: "Geistige Leistungsfähigkeit und Fokus" },
   { icon: Shield, title: "Immunsystem", desc: "Körpereigene Abwehrkräfte stärken" },
   { icon: Leaf, title: "Hautbild", desc: "Energetische Harmonisierung der Haut" },
-  { icon: Activity, title: "Rücken", desc: "Beschwerden und Bewegungseinschränkungen" },
-  { icon: Star, title: "Sport", desc: "HOLOSAN© SPORT für Athleten" },
+  { icon: Activity, title: "Rücken", desc: "Begleitende Anwendungen rund um Körpergefühl, Beweglichkeit und Wohlbefinden" },
+  { icon: Star, title: "Sport", desc: "Für Athleten und Hobbysportler" },
 ];
 
 const steps = [

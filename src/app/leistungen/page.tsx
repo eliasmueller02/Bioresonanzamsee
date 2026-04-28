@@ -62,25 +62,6 @@ const services = [
     ],
   },
   {
-    title: "Körperfeldmessung und Nährstoffbegleitung",
-    price: "79",
-    pricePrefix: "ab",
-    duration: "nach Vereinbarung",
-    features: [
-      "Ausführliche energetische Auswertung",
-      "Information bei Nährstoffmängeln",
-    ],
-  },
-  {
-    title: "MIKROBIOM-Auswertung Besprechung",
-    price: "45",
-    pricePrefix: "ab",
-    duration: "nach Vereinbarung",
-    features: [
-      "Nachbesprechung der Laborauswertung",
-    ],
-  },
-  {
     title: "Vegane Ernährungsbegleitung",
     price: "95",
     duration: "pro Stunde",
@@ -90,12 +71,12 @@ const services = [
     ],
   },
   {
-    title: "Pressotherapie",
+    title: "Presso-Anwendung",
     price: "45",
     duration: "ca. 1 Stunde",
     features: [
-      "Lymphdrainage durch Druckwellenmassage",
-      "Fördert Durchblutung und Stoffwechsel",
+      "Maschinelle Lymphdrainage",
+      "Unterstützung von Durchblutung und Stoffwechsel",
       "Unterstützt Regeneration und Wohlbefinden",
     ],
   },
