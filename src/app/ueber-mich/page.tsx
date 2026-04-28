@@ -22,8 +22,8 @@ const certifications = [
 
 const modules = [
   "Anatomie, Physiologie & Pathologie",
-  "ADHS & Lernschwierigkeiten",
-  "Gewichtsmanagement (HOLOSLIM)",
+  "Konzentration & Fokus",
+  "HOLOSLIM Konzept",
   "Tierhaaranalyse",
   "Umweltmedizin",
   "Hormonelle Gesundheit",

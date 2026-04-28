@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const topics = [
   {
     title: "Basische Ernährung",
-    summary: "Eine zu säurelastige Ernährung kann mit Entzündungen und Gelenkschmerzen in Verbindung stehen. Basische Ernährung hilft, den pH-Wert auszugleichen.",
+    summary: "Eine basische Ernährung unterstützt das Säure-Basen-Gleichgewicht und das allgemeine Wohlbefinden.",
     details: [
       "Empfohlen: Frisches Obst & Gemüse, Nüsse, Samen, Vollkorn, Hülsenfrüchte, Kräuter",
       "Die Zubereitungsmethode beeinflusst die Säure-Basen-Wirkung",
@@ -20,14 +20,14 @@ const topics = [
     title: "Thymusdrüse & Immunsystem",
     summary: "Die Thymusdrüse hinter dem Brustbein ist ein zentrales Immunorgan und bildet T-Zellen zur Infektionsabwehr.",
     details: [
-      "Bioresonanz kann Allergeninformationen in Mastzellen modulieren",
+      "Bioresonanz arbeitet energetisch rund um Mastzellen und das Immunsystem",
       "Mastzellen zirkulieren durch den Thymus für Informationsupdates",
-      "Autoimmunerkrankungen stehen im Zusammenhang mit Thymus-Dysfunktionen",
+      "Die Thymusdrüse spielt eine zentrale Rolle für die körpereigene Selbstregulation",
     ],
   },
   {
     title: "Gluten & Unverträglichkeiten",
-    summary: "Gluten ist ein Protein in Weizen, Roggen und Gerste. Zöliakie löst Autoimmunreaktionen aus, die das Darmgewebe schädigen.",
+    summary: "Gluten ist ein Protein in Weizen, Roggen und Gerste. Manche Menschen berichten von einem besseren Wohlbefinden bei einer glutenarmen Ernährung.",
     details: [
       "Symptome reichen von Verdauungsproblemen bis zu neurologischen Auswirkungen",
       "Glutenfreie Ernährung kann bei bestätigter Unverträglichkeit helfen",
@@ -45,7 +45,7 @@ const topics = [
   },
   {
     title: "pH-Wert & Säure-Basen-Haushalt",
-    summary: "Übersäuerung kann Muskel- und Gelenkschmerzen, Müdigkeit und Stoffwechselstörungen verursachen.",
+    summary: "Ein ausgeglichener Säure-Basen-Haushalt unterstützt Vitalität und allgemeines Wohlbefinden.",
     details: [
       "Ausgewogene Ernährung, Wasser und regelmäßige Bewegung helfen",
       "Stressreduktion spielt eine wichtige Rolle",
@@ -75,7 +75,7 @@ const topics = [
     summary: "Entfernt Abfallstoffe, überschüssige Flüssigkeiten und schädliche Mikroorganismen.",
     details: [
       "Unterstützt Immunabwehr durch Hemmung pathogener Keime",
-      "Förderung: Herz-Kreislauf-Training, Massage, Stretching",
+      "Förderung: Ausdauerbewegung, Massage, Stretching",
       "Gute Haltung und ausreichend Flüssigkeit sind essenziell",
     ],
   },
