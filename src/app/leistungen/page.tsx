@@ -118,11 +118,6 @@ export default function LeistungenPage() {
                 )}
                 <h3 className="font-heading font-semibold mb-2">{s.title}</h3>
                 <div className="flex items-baseline gap-1 mb-1">
-                  {"pricePrefix" in s && s.pricePrefix && (
-                    <span className="text-sm text-dark/40">
-                      {s.pricePrefix}
-                    </span>
-                  )}
                   <span className="text-2xl font-heading font-bold text-sage-500">
                     &euro;{s.price}
                   </span>
