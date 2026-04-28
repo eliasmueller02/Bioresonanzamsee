@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Info-Ecke",
-  description: "Wissenswertes: Basische Ernährung, Thymusdrüse, Gluten, Entgiftung, Darmgesundheit und mehr.",
+  description: "Wissenswertes: Basische Ernährung, Thymusdrüse, Gluten, Entgiftung, Darmwohlbefinden und mehr.",
 };
 
 const topics = [
@@ -53,7 +53,7 @@ const topics = [
     ],
   },
   {
-    title: "Darmgesundheit",
+    title: "Darmwohlbefinden",
     summary: "Der Darm beherbergt ca. 70% der Immunabwehrzellen und über 500 Bakterienarten.",
     details: [
       "Mikrobiom-Vielfalt hat sich in 100 Jahren um 50% verringert",

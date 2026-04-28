@@ -26,8 +26,8 @@ const modules = [
   "HOLOSLIM Konzept",
   "Tierhaaranalyse",
   "Umweltmedizin",
-  "Hormonelle Gesundheit",
-  "Frauengesundheit",
+  "Hormonelle Balance",
+  "Frauenthemen",
 ];
 
 export default function UeberMichPage() {
