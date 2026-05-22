@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Kooperationen",
-  description: "Unsere Partner: BASENbasics, RINGANA, BIOGENA, Kraftwunder, TZ-Gesundheit und mehr.",
+  description: "Unsere Partner: BASENbasics, RINGANA, BIOGENA, doTERRA, Kraftwunder, TZ-Gesundheit und mehr.",
 };
 
 const partners = [
@@ -51,6 +51,12 @@ const partners = [
     category: "Veterinär-Tests",
     description: "Tests für zu Hause für Hunde, Katzen und Pferde rund um Verträglichkeiten und Wohlbefinden.",
     url: "https://vetevo.de/?sca_ref=9915834.WPal1P89ZUDZpFm&utm_source=affiliate-ilse-m%C3%BCller-9915834&utm_medium=affiliate&utm_campaign=231981&utm_term=Offline-Partner-(Flyer+Code)",
+  },
+  {
+    name: "doTERRA",
+    category: "Ätherische Öle",
+    description: "Hochwertige ätherische Öle und Aromatherapie-Produkte für Wohlbefinden im Alltag.",
+    url: "https://office.doterra.com/ilsemueller/#/",
   },
   {
     name: "Kraftwunder",
