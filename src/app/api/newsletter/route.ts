@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
+  const isDev = process.env.NODE_ENV !== "production";
+
   try {
     const { email, name } = await req.json();
 
@@ -15,6 +17,7 @@ export async function POST(req: NextRequest) {
     const listId = Number(process.env.BREVO_LIST_ID) || 6;
 
     if (!apiKey) {
+      console.error("[newsletter] BREVO_API_KEY missing in environment");
       return NextResponse.json(
         { error: "Newsletter-Service nicht konfiguriert." },
         { status: 500 }
@@ -42,19 +45,47 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ success: true });
     }
 
-    const data = await response.json();
+    const rawBody = await response.text();
+    let data: { code?: string; message?: string } = {};
+    try {
+      data = JSON.parse(rawBody);
+    } catch {
+      // non-JSON response — keep rawBody for logging
+    }
+
+    console.error("[newsletter] Brevo error", {
+      status: response.status,
+      code: data.code,
+      message: data.message,
+      body: rawBody,
+      listId,
+    });
 
     if (data.code === "duplicate_parameter") {
       return NextResponse.json({ success: true, duplicate: true });
     }
 
     return NextResponse.json(
-      { error: "Anmeldung fehlgeschlagen. Bitte versuche es später erneut." },
+      {
+        error: "Anmeldung fehlgeschlagen. Bitte versuche es später erneut.",
+        ...(isDev && {
+          debug: {
+            status: response.status,
+            code: data.code,
+            message: data.message,
+            body: rawBody,
+          },
+        }),
+      },
       { status: 500 }
     );
-  } catch {
+  } catch (err) {
+    console.error("[newsletter] Unexpected error", err);
     return NextResponse.json(
-      { error: "Ein Fehler ist aufgetreten." },
+      {
+        error: "Ein Fehler ist aufgetreten.",
+        ...(isDev && { debug: String(err) }),
+      },
       { status: 500 }
     );
   }
