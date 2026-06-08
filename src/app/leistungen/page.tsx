@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Clock, Check, CreditCard } from "lucide-react";
+import { Clock, Check, CreditCard, ExternalLink } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -50,6 +50,10 @@ const services = [
       "Kälteanwendung mit Vakuumdruck",
       "Stimuliert Durchblutung",
     ],
+    infoLink: {
+      href: "https://plabba.com/#vitus",
+      label: "Mehr Informationen zu Core Cooling Kälteanwendung",
+    },
   },
   {
     title: "HRV-Messung",
@@ -134,6 +138,17 @@ export default function LeistungenPage() {
                     </li>
                   ))}
                 </ul>
+                {s.infoLink && (
+                  <a
+                    href={s.infoLink.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 text-xs text-sage-500 hover:text-sage-600 mb-4"
+                  >
+                    <ExternalLink size={12} className="shrink-0" />
+                    {s.infoLink.label}
+                  </a>
+                )}
                 <a
                   href="https://myhellocash.com/widget/bioresonanz-am-see-e-u-121619"
                   target="_blank"
