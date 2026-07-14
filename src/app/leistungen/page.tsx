@@ -14,11 +14,11 @@ const services = [
     duration: "ca. 2 Stunden",
     highlight: true,
     features: [
-      "Energiefeldmessung (200 energetische Werte)",
-      "HRV-Messung mit Atemübungsprogramm",
+      "Energetische Austestung ausgewählter Bereiche",
+      "HRV-Aufzeichnung mit Atemübungsprogramm",
       "Umfassende BIORESONANZ-Austestung",
       "30-minütige Frequenzanwendung",
-      "Detaillierte Auswertungen und Infoblätter",
+      "Begleitende Infoblätter zum Mitnehmen",
     ],
   },
   {
@@ -26,8 +26,8 @@ const services = [
     price: "100",
     duration: "ca. 1 Stunde",
     features: [
-      "Kontroll-Energiefeldmessung",
-      "Vergleich mit vorherigen Messungen",
+      "Erneute energetische Austestung",
+      "Besprechung der aktuellen energetischen Themen",
       "Individuell abgestimmte Frequenzanwendung",
     ],
   },
@@ -36,9 +36,9 @@ const services = [
     price: "35",
     duration: "ca. 15 Minuten",
     features: [
-      "Pulsierendes, tiefenwirksames Kaltlicht",
-      "Aktiviert Zellenergie",
-      "Unterstützt natürliche Regeneration",
+      "Gepulstes Kalt-Rotlicht zur äußerlichen Anwendung",
+      "Wird gezielt an ausgewählten Körperbereichen angewendet",
+      "Wird häufig im Anschluss an körperliche Belastung oder bei beanspruchten Körperbereichen genutzt",
     ],
   },
   {
@@ -47,8 +47,8 @@ const services = [
     duration: "ca. 15 Minuten",
     features: [
       "Core Cooling Technologie",
-      "Kälteanwendung mit Vakuumdruck",
-      "Stimuliert Durchblutung",
+      "Kontrollierte Kälteanwendung an den Handflächen mit Unterdruck",
+      "Intensiver Kältereiz über die Handflächen",
     ],
     infoLink: {
       href: "https://plabba.com/#vitus",
@@ -60,7 +60,7 @@ const services = [
     price: "79",
     duration: "ca. 20 Minuten",
     features: [
-      "Herzraten-Variabilität Analyse",
+      "Herzraten-Variabilität Aufzeichnung",
       "Persönliches Atemübungsprogramm",
       "Optional: Ayurvedische Ernährungstipps",
     ],
@@ -71,7 +71,7 @@ const services = [
     duration: "pro Stunde",
     features: [
       "Pflanzenbasierte Ernährungsumstellung",
-      "Unterstützung bei Unverträglichkeiten",
+      "Begleitung bei der Auswahl gut bekömmlicher pflanzlicher Lebensmittel",
     ],
   },
   {
@@ -79,9 +79,9 @@ const services = [
     price: "45",
     duration: "ca. 1 Stunde",
     features: [
-      "Maschinelle Lymphdrainage",
-      "Unterstützung von Durchblutung und Stoffwechsel",
-      "Unterstützt Regeneration und Wohlbefinden",
+      "Mechanische Druckwellenmassage der Beine",
+      "Rhythmische Druckwellenanwendung für ein angenehmes und leichteres Körpergefühl",
+      "Besonders angenehm nach langem Sitzen, Stehen oder körperlicher Belastung",
     ],
   },
 ];

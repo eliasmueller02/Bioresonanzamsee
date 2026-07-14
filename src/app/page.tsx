@@ -18,11 +18,11 @@ import NewsletterForm from "@/components/NewsletterForm";
 const CTA_URL = "https://myhellocash.com/widget/bioresonanz-am-see-e-u-121619";
 
 const treatments = [
-  { icon: Brain, title: "Kopfdruck", desc: "Spannungsgefühle und Druck im Kopf" },
-  { icon: Heart, title: "Verdauung", desc: "Unwohlsein und Dysbalancen im Darm" },
-  { icon: Sparkles, title: "Psyche", desc: "Stress, Erschöpfung und Belastungen" },
-  { icon: Zap, title: "Konzentration", desc: "Geistige Leistungsfähigkeit und Fokus" },
-  { icon: Shield, title: "Immunsystem", desc: "Körpereigene Abwehrkräfte stärken" },
+  { icon: Brain, title: "Kopf", desc: "Energetische Begleitung rund um Anspannung und Wohlbefinden" },
+  { icon: Heart, title: "Bauchgefühl", desc: "Energetische Begleitung rund um Bauchgefühl und Wohlbefinden" },
+  { icon: Sparkles, title: "Innere Ruhe", desc: "Energetische Begleitung in Phasen von Anspannung und Balance" },
+  { icon: Zap, title: "Fokus", desc: "Energetische Begleitung rund um mentale Ausgeglichenheit" },
+  { icon: Shield, title: "Belastung", desc: "Energetische Begleitung rund um Wohlbefinden und Belastungsempfinden" },
   { icon: Leaf, title: "Hautbild", desc: "Energetische Harmonisierung der Haut" },
   { icon: Activity, title: "Rücken", desc: "Begleitende Anwendungen rund um Körpergefühl, Beweglichkeit und Wohlbefinden" },
   { icon: Star, title: "Sport", desc: "Für Athleten und Hobbysportler" },
@@ -32,19 +32,21 @@ const steps = [
   {
     num: "1",
     title: "Austestung",
-    desc: "Schmerzfreie Messung mit dem HOLOSAN© Gerät. Über 200 energetische Werte werden erfasst.",
+    desc: "Schmerzfreie energetische Austestung mit dem HOLOSAN© Gerät. Dabei werden mehr als 200 energetische Bereiche betrachtet.",
   },
   {
     num: "2",
-    title: "Analyse",
-    desc: "Auswertung der Ergebnisse und Identifizierung energetischer Blockaden.",
+    title: "Besprechung",
+    desc: "Gemeinsame Besprechung der energetischen Austestung und der dabei aufgezeigten Themenbereiche.",
   },
   {
     num: "3",
     title: "Anwendung",
-    desc: "Individuell abgestimmte Frequenzanwendung zur Aktivierung der Selbstheilungskräfte.",
+    desc: "Individuell abgestimmte Frequenzanwendung mit dem Ziel, das subjektive Wohlbefinden und die energetische Ausgewogenheit zu begleiten.",
   },
 ];
+
+const reviews: { name: string; text: string; time: string }[] = [];
 
 function GoogleIcon({ className }: { className?: string }) {
   return (
@@ -76,8 +78,8 @@ export default function Home() {
                 <span className="text-sage-400">Dein Wohlbefinden.</span>
               </h1>
               <p className="text-dark/50 text-lg max-w-lg mb-10 leading-relaxed">
-                Sanfte, schmerzfreie Bioresonanzmethode bei energetischen
-                Blockaden und Dysbalancen. Deine Praxis in Jois am Neusiedler See.
+                Sanfte, schmerzfreie Bioresonanzmethode für dein ganzheitliches
+                Wohlbefinden. Deine Praxis in Jois am Neusiedler See.
               </p>
               <div className="flex flex-wrap gap-3">
                 <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
@@ -111,9 +113,9 @@ export default function Home() {
                 Was ist Bioresonanz?
               </h2>
               <p className="text-dark/50 leading-relaxed">
-                Eine sanfte, schmerzfreie energetische Anwendung. Körpereigene
-                Frequenzmuster werden erfasst und harmonisiert, um die
-                Selbstheilungskräfte zu aktivieren.
+                Eine sanfte, schmerzfreie energetische Anwendung, mit dem Ziel,
+                das subjektive Wohlbefinden und die energetische Ausgewogenheit
+                zu begleiten.
               </p>
             </div>
           </ScrollReveal>
@@ -121,7 +123,7 @@ export default function Home() {
             {[
               { label: "Schmerzfrei", sub: "Sanfte Anwendung" },
               { label: "Bis 3m Distanz", sub: "Keine Nahkörperarbeit" },
-              { label: "Verordnungsfähig", sub: "Relevant für Privatversicherung" },
+              { label: "Kosteneinreichung", sub: "Je nach Versicherung möglich" },
             ].map((item, i) => (
               <ScrollReveal key={item.label} delay={i * 100}>
                 <div className="card text-center py-8">
@@ -142,10 +144,10 @@ export default function Home() {
         <div className="container-max">
           <ScrollReveal>
             <h2 className="text-3xl font-heading font-bold mb-3 text-center">
-              Anwendungsgebiete
+              Themenbereiche
             </h2>
             <p className="text-dark/50 text-center mb-12 max-w-lg mx-auto">
-              Unterstützung bei vielfältigen energetischen Dysbalancen.
+              Energetische Begleitung in verschiedenen Lebensbereichen.
             </p>
           </ScrollReveal>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -169,7 +171,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-10 items-center">
               <div>
                 <h2 className="text-3xl font-heading font-bold mb-4">
-                  Modernste Technologie
+                  Moderne Technologie
                 </h2>
                 <p className="text-dark/50 leading-relaxed mb-6">
                   Ich arbeite mit HOLOSAN© Bioresonanzgeräten der neuesten
@@ -259,24 +261,9 @@ export default function Home() {
               </a>
             </div>
           </ScrollReveal>
+          {reviews.length > 0 && (
           <div className="grid md:grid-cols-3 gap-5">
-            {[
-              {
-                name: "Ilse F.",
-                text: "Deine Behandlungen haben mir sehr gut geholfen und auch die Ernährungsumstellung hat sich auf meinen Körper positiv ausgewirkt. Die Basic-Produkte von deiner Praxis sind schnell zubereitet und schmecken auch super gut. Ich empfehle dich zu 100% weiter.",
-                time: "vor 11 Monaten",
-              },
-              {
-                name: "Martina G.",
-                text: "Ich habe Unterstützung für die Vorbereitung auf einen Laufbewerb in Anspruch genommen - den Bewerb konnte ich mit meiner persönlichen Bestmarke finishen!",
-                time: "vor 2 Jahren",
-              },
-              {
-                name: "Theresa W.",
-                text: "Ilse Müller hat uns sehr sehr geholfen die Unverträglichkeiten unseres Sohnes in den Griff zu bekommen! Vor allem das Austesten über die Haare war für mich einfach der Wahnsinn! Das bedeutete überhaupt keine Schmerzen für meinen Sohn! Ich kann Ilse wirklich sehr weiterempfehlen!",
-                time: "vor 2 Jahren",
-              },
-            ].map((r, i) => (
+            {reviews.map((r, i) => (
               <ScrollReveal key={r.name} delay={i * 100}>
                 <div className="card flex flex-col h-full">
                   <div className="flex items-center gap-1.5 mb-3">
@@ -300,6 +287,7 @@ export default function Home() {
               </ScrollReveal>
             ))}
           </div>
+          )}
           <ScrollReveal>
             <div className="text-center mt-8">
               <a
@@ -325,10 +313,10 @@ export default function Home() {
           </ScrollReveal>
           <div className="grid sm:grid-cols-2 gap-3">
             {[
-              "Ärztlich verordnungsfähig",
+              "Kosteneinreichung je nach Versicherung möglich",
               "Funktioniert bis 3 Meter Distanz",
-              "Steuerlich absetzbar (Arbeitnehmerveranlagung)",
-              "Anerkannte energetische Methode",
+              "Steuerliche Berücksichtigung ggf. möglich",
+              "Im Berufsbild der Humanenergetik eingesetzte Methode",
               "Ersetzt nicht den Arztbesuch",
             ].map((item, i) => (
               <ScrollReveal key={item} delay={i * 80}>
@@ -339,6 +327,15 @@ export default function Home() {
               </ScrollReveal>
             ))}
           </div>
+          <ScrollReveal>
+            <p className="mt-6 text-xs text-dark/40 leading-relaxed text-center max-w-2xl mx-auto">
+              Eine ärztliche Empfehlung oder Verordnung kann abhängig von der
+              individuellen Versicherung für eine Kosteneinreichung relevant
+              sein. Eine Kostenübernahme ist nicht garantiert. Eine steuerliche
+              Berücksichtigung kann unter bestimmten Voraussetzungen möglich
+              sein. Bitte kläre dies individuell mit deiner Steuerberatung.
+            </p>
+          </ScrollReveal>
         </div>
       </section>
 

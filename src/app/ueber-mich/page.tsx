@@ -12,9 +12,7 @@ const certifications = [
   { year: "2018", title: "Vegane Sportlerernährung", detail: "Spezialisierung" },
   { year: "2021", title: "HOLOSAN© Bioresonanz-Praktikerin", detail: "HOLOSAN© Akademie" },
   { year: "2021", title: "Vegane Ernährung Mutter & Kind", detail: "Spezialisierung" },
-  { year: "2022", title: "Dunkelfeldmikroskopie", detail: "Phoenix Healing" },
   { year: "2023", title: "HOLOSAN© SPORT Konzept", detail: "HOLOSAN© Akademie" },
-  { year: "2023", title: "Vitalnährstoff-Therapie", detail: "Seminar" },
   { year: "2024", title: "Mentalfeld-Technik Level I", detail: "Dr. Dietrich Klinghardt" },
   { year: "2025", title: "Darmgesundheit & Nahrungsmittelunverträglichkeit", detail: "Spezialisierung" },
   { year: "2025", title: "HOLOSAN© VET (Hund)", detail: "Spezialisierung" },
@@ -25,8 +23,6 @@ const modules = [
   "Konzentration & Fokus",
   "HOLOSLIM Konzept",
   "Tierhaaranalyse",
-  "Umweltmedizin",
-  "Hormonelle Balance",
   "Frauenthemen",
 ];
 
@@ -93,17 +89,18 @@ export default function UeberMichPage() {
           <div className="space-y-4 text-dark/55 leading-relaxed text-[15px]">
             <p>
               Mein Weg begann 2018 mit der Ausbildung zur veganen
-              Ernährungstrainerin. Viele Klient:innen kämpften mit
-              Nahrungsmittelunverträglichkeiten - ein Problem, das allein
-              durch Ernährungsberatung oft nicht gelöst werden konnte.
+              Ernährungstrainerin. In meiner Arbeit begegneten mir immer wieder
+              Menschen, die sich zusätzlich zur Ernährungsberatung eine
+              ganzheitliche energetische Begleitung wünschten.
             </p>
             <p>
-              Diese Erkenntnis führte mich zur HOLOSAN© Bioresonanzmethode.
+              Dadurch wurde ich auf die HOLOSAN© Bioresonanzmethode aufmerksam.
               2021 schloss ich die Ausbildung an der HOLOSAN© Akademie ab.
             </p>
             <p>
               Seit 2024 biete ich unter dem Label <strong>BASENbasics</strong>{" "}
-              gekeimte Lebensmittelprodukte für bessere Verträglichkeit an.
+              gekeimte Lebensmittelprodukte als unkomplizierte Ergänzung einer
+              abwechslungsreichen pflanzlichen Ernährung an.
             </p>
           </div>
 

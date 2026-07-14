@@ -3,49 +3,48 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Info-Ecke",
-  description: "Wissenswertes: Basische Ernährung, Thymusdrüse, Gluten, Entgiftung, Darmwohlbefinden und mehr.",
+  description: "Wissenswertes rund um Ernährung, Wohlbefinden und energetische Begleitung in der Humanenergetik.",
 };
 
 const topics = [
   {
     title: "Basische Ernährung",
-    summary: "Eine basische Ernährung unterstützt das Säure-Basen-Gleichgewicht und das allgemeine Wohlbefinden.",
+    summary: "Eine basische Ernährung setzt auf einen hohen Anteil an frischem Obst, Gemüse und pflanzlichen Lebensmitteln.",
     details: [
       "Empfohlen: Frisches Obst & Gemüse, Nüsse, Samen, Vollkorn, Hülsenfrüchte, Kräuter",
-      "Die Zubereitungsmethode beeinflusst die Säure-Basen-Wirkung",
-      "Ausreichend Wasser unterstützt den Säure-Basen-Haushalt",
+      "Die Zubereitungsmethode beeinflusst die Zusammensetzung der Mahlzeit",
+      "Ausreichend trinken ist Teil einer ausgewogenen Ernährung",
     ],
   },
   {
-    title: "Thymusdrüse & Immunsystem",
-    summary: "Die Thymusdrüse hinter dem Brustbein ist ein zentrales Immunorgan und bildet T-Zellen zur Infektionsabwehr.",
+    title: "Thymusdrüse",
+    summary: "Die Thymusdrüse hinter dem Brustbein ist ein Organ des Immunsystems und an der Reifung von T-Zellen beteiligt.",
     details: [
-      "Bioresonanz arbeitet energetisch rund um Mastzellen und das Immunsystem",
-      "Mastzellen zirkulieren durch den Thymus für Informationsupdates",
+      "Sie ist vor allem in jungen Jahren besonders aktiv",
       "Die Thymusdrüse spielt eine zentrale Rolle für die körpereigene Selbstregulation",
     ],
   },
   {
     title: "Gluten & Unverträglichkeiten",
-    summary: "Gluten ist ein Protein in Weizen, Roggen und Gerste. Manche Menschen berichten von einem besseren Wohlbefinden bei einer glutenarmen Ernährung.",
+    summary: "Gluten ist ein Protein, das in Weizen, Roggen und Gerste vorkommt.",
     details: [
       "Die individuelle Verträglichkeit kann sehr unterschiedlich sein",
       "Glutenfreie Ernährung kann bei bestätigter Unverträglichkeit helfen",
-      "Bioresonanz unterstützt bei der Identifizierung energetischer Dysbalancen",
+      "In der energetischen Austestung können individuelle Themenbereiche betrachtet werden",
     ],
   },
   {
-    title: "Schwermetalle & Umweltgifte",
-    summary: "Umweltschadstoffe können das energetische Gleichgewicht und den Stoffwechsel belasten.",
+    title: "Umwelteinflüsse",
+    summary: "Im Alltag ist der Körper verschiedenen Umwelteinflüssen ausgesetzt.",
     details: [
-      "Entgiftung über Leber, Niere, Lunge, Haut und Lymphsystem",
-      "Die Leber wandelt Toxine in wasserlösliche Verbindungen um",
-      "Bewegung und Flüssigkeit unterstützen die Entgiftung",
+      "Leber, Nieren, Lunge, Haut und Lymphsystem übernehmen Aufgaben bei Stoffwechsel und Ausscheidung",
+      "Die Leber wandelt bestimmte Stoffe in wasserlösliche Verbindungen um",
+      "Ausreichend Bewegung und Flüssigkeitszufuhr tragen zum allgemeinen Wohlbefinden bei",
     ],
   },
   {
     title: "pH-Wert & Säure-Basen-Haushalt",
-    summary: "Ein ausgeglichener Säure-Basen-Haushalt unterstützt Vitalität und allgemeines Wohlbefinden.",
+    summary: "Der Säure-Basen-Haushalt beschreibt das Verhältnis von Säuren und Basen im Körper, das über verschiedene Puffersysteme reguliert wird.",
     details: [
       "Ausgewogene Ernährung, Wasser und regelmäßige Bewegung helfen",
       "Stressreduktion spielt eine wichtige Rolle",
@@ -54,11 +53,11 @@ const topics = [
   },
   {
     title: "Darmwohlbefinden",
-    summary: "Der Darm beherbergt ca. 70% der Immunabwehrzellen und über 500 Bakterienarten.",
+    summary: "Der Darm spielt eine wichtige Rolle für das allgemeine Wohlbefinden und beherbergt eine Vielzahl von Bakterienarten.",
     details: [
-      "Mikrobiom-Vielfalt hat sich in 100 Jahren um 50% verringert",
-      "Ursachen: Verarbeitete Lebensmittel, Antibiotika und Stress",
-      "Der Darm produziert über 20 Hormone, darunter Dopamin und Serotonin",
+      "Ernährung, Medikamente, Lebensstil und Umweltfaktoren können die Zusammensetzung des Mikrobioms beeinflussen",
+      "Verarbeitete Lebensmittel, Antibiotika und Stress zählen zu den möglichen Einflussfaktoren",
+      "Der Darm ist an der Bildung und Regulation verschiedener Botenstoffe beteiligt und steht in engem Austausch mit dem Nervensystem",
     ],
   },
   {
@@ -67,14 +66,14 @@ const topics = [
     details: [
       "Leber: Filtert Toxine, produziert Enzyme, speichert Nährstoffe",
       "Nieren: Filtern Abfall, regulieren Wasser- und Elektrolythaushalt",
-      "Beide befreien den Körper von Schadstoffen",
+      "Leber und Nieren übernehmen wichtige Aufgaben bei Stoffwechsel, Umwandlung und Ausscheidung körpereigener und körperfremder Substanzen",
     ],
   },
   {
     title: "Lymphsystem",
-    summary: "Entfernt Abfallstoffe, überschüssige Flüssigkeiten und schädliche Mikroorganismen.",
+    summary: "Das Lymphsystem transportiert Gewebsflüssigkeit und ist ein wichtiger Bestandteil des Immunsystems.",
     details: [
-      "Unterstützt Immunabwehr durch Hemmung pathogener Keime",
+      "Transportiert überschüssige Gewebsflüssigkeit zurück in den Blutkreislauf",
       "Förderung: Ausdauerbewegung, Massage, Stretching",
       "Gute Haltung und ausreichend Flüssigkeit sind essenziell",
     ],

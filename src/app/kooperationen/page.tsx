@@ -10,25 +10,19 @@ const partners = [
   {
     name: "BASENbasics",
     category: "Gekeimte Lebensmittel",
-    description: "Gekeimte Hülsenfrüchte, Reis, Dinkel-Pasta, Kerne & Samen. Verbesserte Verdaulichkeit, höhere Nährstoffdichte und mehr Darmwohlbefinden.",
+    description: "Gekeimte Hülsenfrüchte, Reis, Dinkel-Pasta, Kerne & Samen. Durch Keimung und schonende Trocknung verarbeitete Lebensmittel für eine abwechslungsreiche pflanzliche Küche.",
     url: "https://www.basenbasics.at",
   },
   {
     name: "ROOT Brands - Clean Slate",
     category: "Nahrungsergänzung",
-    description: "Bioavailable Silica-Tropfen mit Zeolith, Spurenmineralen und Vitamin C. Unterstützt das natürliche Wohlbefinden auf zellulärer Ebene.",
+    description: "Bioavailable Silica-Tropfen mit Zeolith, Spurenmineralen und Vitamin C.",
     url: "https://therootbrands.com",
-  },
-  {
-    name: "SINNbalance TEE",
-    category: "Kräutertees",
-    description: "Drei Teesorten: BASENTEE (ausgleichend), SOMMER (stoffwechselanregend) und AUSLEITUNG (sanft reinigende Kräuter). 40g im praktischen, wiederverwendbaren Glas.",
-    url: "https://basenbasics.at/zum-trinken/?e-filter-e1639b6-product_tag=tee",
   },
   {
     name: "RINGANA",
     category: "Frischekosmetik & Supplements",
-    description: "Natürliche Nahrungsergänzung und vegane Kosmetik ohne bedenkliche Inhaltsstoffe. Frisch, hochwertig und trendsetzend.",
+    description: "Vegane Frischekosmetik und ausgewählte Nahrungsergänzungsmittel. Frisch und hochwertig.",
     url: "https://ilsemueller.ringana.com",
     note: "Geschenkgutscheine in der Praxis erhältlich",
   },
@@ -42,7 +36,7 @@ const partners = [
   {
     name: "TZ-Gesundheit",
     category: "Earthing-Produkte",
-    description: "Erdungsprodukte, die mit der natürlichen Erdenergie verbinden - für den Alltag und besseren Schlaf.",
+    description: "Erdungsprodukte für die Anwendung im Alltag und während der Ruhezeiten.",
     url: "https://tz-gesundheit.de",
     promo: "Code sinnbalance836: 5% Rabatt",
   },

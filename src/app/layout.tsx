@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s | BIORESONANZ am See",
   },
   description:
-    "Bioresonanzpraxis in Jois am Neusiedler See. HOLOSAN© Bioresonanzmethode bei energetischen Blockaden und Dysbalancen. Ilse Müller - deine Expertin für ganzheitliches Wohlbefinden.",
+    "Bioresonanzpraxis in Jois am Neusiedler See. HOLOSAN© Bioresonanzmethode für dein ganzheitliches Wohlbefinden. Ilse Müller begleitet dich energetisch.",
   keywords: [
     "Bioresonanz",
     "HOLOSAN",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "BIORESONANZ am See",
     title: "BIORESONANZ am See | Ilse Müller",
     description:
-      "HOLOSAN© Bioresonanzmethode in Jois am Neusiedler See. Sanfte, schmerzfreie Anwendung bei energetischen Blockaden und Dysbalancen.",
+      "HOLOSAN© Bioresonanzmethode in Jois am Neusiedler See. Sanfte energetische Begleitung für dein ganzheitliches Wohlbefinden.",
     images: [
       {
         url: "/images/praxis-collage.png",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
 function LocalBusinessJsonLd() {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "HealthAndBeautyBusiness",
+    "@type": "LocalBusiness",
     name: "BIORESONANZ am See e.U.",
     description:
       "Bioresonanzpraxis mit HOLOSAN© Methode für ganzheitliches Wohlbefinden in Jois am Neusiedler See.",
